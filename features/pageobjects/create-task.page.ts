@@ -1,14 +1,14 @@
 class CreateTaskPage {
-  get titleInput() {
-    return $('//*[@text="Task name"]')
-  }
-
   get saveButton() {
     return $('~Save')
   }
 
   get cancelButton() {
     return $('//android.widget.Button[@text="Discard"]')
+  }
+
+  titleInput(text: string = 'Task name') {
+    return $(`//android.widget.EditText[@text="${text}"]`)
   }
 
   errorMessage(message: string) {

@@ -11,15 +11,22 @@ Given('o usuário está na tela principal de listagem de tarefas', async () => {
     await tasksPage.titlePage().waitForDisplayed();
 });
 
+Given('que existe uma tarefa cadastrada com o título {string}', async (title: string) => {
+    await tasksPage.createTaskButton.click();
+    await createTaskPage.titleInput().click();
+    await createTaskPage.titleInput().setValue(title);
+    await createTaskPage.saveButton.click();
+});
+
 When('o usuário inicia a criação de uma nova tarefa', async () => {
     await tasksPage.createTaskButton.waitForDisplayed();
     await tasksPage.createTaskButton.click();
-    await createTaskPage.titleInput.waitForDisplayed();;
+    await createTaskPage.titleInput().waitForDisplayed();;
 })
 
 When('informa o título {string}', async (title: string) => {
-    await createTaskPage.titleInput.click();
-    await createTaskPage.titleInput.setValue(title);
+    await createTaskPage.titleInput().click();
+    await createTaskPage.titleInput().setValue(title);
 });
 
 When('confirma a criação da tarefa', async () => {
@@ -37,15 +44,42 @@ When('tenta confirmar a criação sem informar um título', async () => {
 
 When('o usuário cria uma tarefa com o título {string}', async (title: string) => {
     await tasksPage.createTaskButton.click();
-    await createTaskPage.titleInput.click();
-    await createTaskPage.titleInput.setValue(title);
+    await createTaskPage.titleInput().click();
+    await createTaskPage.titleInput().setValue(title);
     await createTaskPage.saveButton.click();
+});
+
+When('o usuário abre a tarefa {string}', async (title: string) => {
+    const taskElement = tasksPage.task(title);
+    await taskElement.waitForDisplayed();
+    await taskElement.longPress();
+
+    await createTaskPage.titleInput(title).waitForDisplayed();
+});
+
+When('altera o título de {string} para {string}', async (oldTitle: string, newTitle: string) => {
+    await createTaskPage.titleInput(oldTitle).click();
+    await createTaskPage.titleInput(oldTitle).clearValue();
+    await createTaskPage.titleInput(oldTitle).setValue(newTitle);
+});
+
+When('salva as alterações', async () => {
+    await createTaskPage.saveButton.click();
+});
+
+When('descarta as alterações sem salvar', async () => {
+    await createTaskPage.cancelCreation();
+    await tasksPage.titlePage().waitForDisplayed();
 });
 
 Then('a tarefa {string} deve ser exibida na lista de tarefas', async (title: string) => {
     await tasksPage.titlePage().waitForDisplayed();
-    await tasksPage.taskTitle(title).waitForDisplayed();
-    await tasksPage.taskCheckbox(title).waitForDisplayed();
+
+    const taskTitle = tasksPage.taskTitle(title);
+    await taskTitle.waitForDisplayed();
+
+    const checkbox = tasksPage.taskCheckbox(title);
+    await checkbox.waitForDisplayed();
 });
 
 Then('a tarefa {string} não deve ser exibida na lista de tarefas', async (title: string) => {
@@ -53,7 +87,7 @@ Then('a tarefa {string} não deve ser exibida na lista de tarefas', async (title
 });
 
 Then('a criação da tarefa não deve ser concluída', async () => {
-    await expect(createTaskPage.titleInput).toBeDisplayed();
+    await expect(createTaskPage.titleInput()).toBeDisplayed();
 });
 
 Then('uma mensagem informando que o título é obrigatório deve ser exibida', async () => {

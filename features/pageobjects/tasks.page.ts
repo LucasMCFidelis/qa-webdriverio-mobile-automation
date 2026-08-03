@@ -9,20 +9,20 @@ class TasksPage {
 
   task(title: string) {
     return $(
-      `//*[@resource-id="org.tasks:id/title"][@text="${title}"]/..`
+      `//*[@resource-id="org.tasks:id/title" and @text="${title}"]/..`
     )
   }
 
   taskTitle(title: string) {
     return this.task(title).$(
-      `//*[@resource-id="org.tasks:id/title"]`
-    )
+      '//*[@resource-id="org.tasks:id/title"]'
+    );
   }
 
   taskCheckbox(title: string) {
     return this.task(title).$(
-      `//*[@resource-id="org.tasks:id/completeBox"]`
-    )
+      '//*[@resource-id="org.tasks:id/completeBox"]'
+    );
   }
 }
 
