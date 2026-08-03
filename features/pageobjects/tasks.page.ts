@@ -24,6 +24,11 @@ class TasksPage {
       '//*[@resource-id="org.tasks:id/completeBox"]'
     );
   }
+
+  async initCreateTask() {
+    await this.createTaskButton.waitForDisplayed();
+    await this.createTaskButton.click();
+  }
 }
 
 export const tasksPage = new TasksPage()

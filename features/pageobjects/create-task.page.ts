@@ -21,6 +21,23 @@ class CreateTaskPage {
     await this.cancelButton.waitForDisplayed()
     await this.cancelButton.click()
   }
+
+  async setTaskTitle({ title, selector }: { title: string, selector?: string }) {
+    const titleInput = this.titleInput(selector);
+    await titleInput.waitForDisplayed();
+    await titleInput.click();
+    await titleInput.clearValue();
+    await titleInput.setValue(title);
+  }
+
+  async saveTask() {
+    await this.saveButton.click();
+  }
+
+  async createTask(title: string) {
+    await this.setTaskTitle({ title });
+    await this.saveTask();
+  }
 }
 
 export const createTaskPage = new CreateTaskPage()
