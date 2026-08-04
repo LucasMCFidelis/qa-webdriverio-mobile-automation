@@ -122,6 +122,24 @@ When(
     }
 );
 
+When('o usuário inicia a exclusão da tarefa', async () => {
+    const deleteButton = updateTaskPage.deleteButton;
+    await deleteButton.waitForDisplayed();
+    await deleteButton.click();
+});
+
+When('confirma a exclusão', async () => {
+    const confirmDeleteButton = updateTaskPage.confirmDeleteButton;
+    await confirmDeleteButton.waitForDisplayed();
+    await confirmDeleteButton.click();
+});
+
+When('cancela a confirmação de exclusão', async () => {
+    const cancelDeleteButton = updateTaskPage.cancelDeleteButton;
+    await cancelDeleteButton.waitForDisplayed();
+    await cancelDeleteButton.click();
+});
+
 Then('a tarefa {string} deve ser exibida na lista de tarefas', async (title: string) => {
     await tasksPage.ensureTaskListDisplay({
         list: 'No due date',
@@ -167,7 +185,7 @@ Then('a tarefa {string} deve estar com o status {string}', async (title: string,
                 title
             });
 
-            const task = tasksPage.task(title);           
+            const task = tasksPage.task(title);
             await task.waitForDisplayed();
             await expect(task).toBeDisplayed();
             break;
@@ -176,4 +194,8 @@ Then('a tarefa {string} deve estar com o status {string}', async (title: string,
             console.log(`Status ${status} não reconhecido`);
             break;
     }
+});
+
+Then('o usuário permanecer com a tarefa {string} aberta', async (title: string) => {
+    await expect(updateTaskPage.titleInput(title)).toBeDisplayed();
 });
