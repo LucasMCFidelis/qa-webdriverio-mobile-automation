@@ -2,6 +2,7 @@ import { Given, Then, When } from "@wdio/cucumber-framework";
 import { welcomePage } from "../pageobjects/welcome.page";
 import { tasksPage } from "../pageobjects/tasks.page";
 import { createTaskPage } from "../pageobjects/create-task.page";
+import { updateTaskPage } from "../pageobjects/update-task.page";
 
 Given('o usuário está na tela principal de listagem de tarefas', async () => {
     const isWelcomePageDisplayed = await welcomePage.continueWithoutSyncButton.isDisplayed();
@@ -13,12 +14,12 @@ Given('o usuário está na tela principal de listagem de tarefas', async () => {
 
 Given('que existe uma tarefa cadastrada com o título {string}', async (title: string) => {
     await tasksPage.initCreateTask();
-    await createTaskPage.createTask(title);
+    await createTaskPage.submitTask(title);
 });
 
 Given('que existe uma tarefa concluída com o título {string}', async (title: string) => {
     await tasksPage.initCreateTask();
-    await createTaskPage.createTask(title);
+    await createTaskPage.submitTask(title);
 
     const checkbox = tasksPage.taskCheckbox(title);
     await checkbox.waitForDisplayed();
@@ -39,7 +40,7 @@ When('confirma a criação da tarefa', async () => {
 });
 
 When('cancela a criação sem salvar', async () => {
-    await createTaskPage.cancelCreation();
+    await createTaskPage.cancelFillForm();
     await tasksPage.titlePage().waitForDisplayed();
 });
 
@@ -49,7 +50,7 @@ When('tenta confirmar a criação sem informar um título', async () => {
 
 When('o usuário cria uma tarefa com o título {string}', async (title: string) => {
     await tasksPage.initCreateTask();
-    await createTaskPage.createTask(title);
+    await createTaskPage.submitTask(title);
 });
 
 When('o usuário abre a tarefa {string}', async (title: string) => {
@@ -57,19 +58,19 @@ When('o usuário abre a tarefa {string}', async (title: string) => {
     await taskElement.waitForDisplayed();
     await taskElement.click();
 
-    await createTaskPage.titleInput(title).waitForDisplayed();
+    await updateTaskPage.titleInput(title).waitForDisplayed();
 });
 
 When('altera o título de {string} para {string}', async (oldTitle: string, newTitle: string) => {
-    await createTaskPage.setTaskTitle({ selector: oldTitle, title: newTitle });
+    await updateTaskPage.setTaskTitle({ selector: oldTitle, title: newTitle });
 });
 
 When('salva as alterações', async () => {
-    await createTaskPage.saveTask();
+    await updateTaskPage.saveTask();
 });
 
 When('descarta as alterações sem salvar', async () => {
-    await createTaskPage.cancelCreation();
+    await updateTaskPage.cancelFillForm();
     await tasksPage.titlePage().waitForDisplayed();
 });
 
