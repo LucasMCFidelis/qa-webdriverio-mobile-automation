@@ -1,8 +1,8 @@
 # language: pt
 
-Funcionalidade: Gerenciamento de Tarefas
+Funcionalidade: Criação de Tarefas
   Como usuário do Tasks.org
-  Eu quero criar, editar, excluir, concluir e reabrir tarefas
+  Eu quero poder criar tarefas com diferentes títulos
   Para organizar minhas atividades de forma confiável
 
   Contexto:
@@ -41,19 +41,3 @@ Funcionalidade: Gerenciamento de Tarefas
     E tenta confirmar a criação sem informar um título
     Então a criação da tarefa não deve ser concluída
     E uma mensagem informando que o título é obrigatório deve ser exibida
-
-  @edicao
-  Cenário: Editar o título de uma tarefa existente
-    Dado que existe uma tarefa cadastrada com o título "Lavar o carro"
-    Quando o usuário abre a tarefa "Lavar o carro"
-    E altera o título de "Lavar o carro" para "Lavar o carro e aspirar o interior"
-    E salva as alterações
-    Então a tarefa "Lavar o carro e aspirar o interior" deve ser exibida na lista de tarefas
-
-  @edicao @alternativo
-  Cenário: Descartar alterações feitas durante a edição de uma tarefa
-    Dado que existe uma tarefa cadastrada com o título "Pagar contas"
-    Quando o usuário abre a tarefa "Pagar contas"
-    E altera o título de "Pagar contas" para "Pagar contas do mês"
-    E descarta as alterações sem salvar
-    Então a tarefa "Pagar contas" deve ser exibida na lista de tarefas
