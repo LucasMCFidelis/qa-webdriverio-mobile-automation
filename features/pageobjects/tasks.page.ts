@@ -51,6 +51,7 @@ class TasksPage {
     title: string
   }) {
     const taskListHeader = this.taskListHeader(list);
+    await taskListHeader.waitForDisplayed();
     if (await taskListHeader.isDisplayed() == false) {
       return
     }

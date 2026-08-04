@@ -20,4 +20,18 @@ Funcionalidade: Gerenciamento de estados das Tarefas
     Dado que existe uma tarefa concluída com o título "Enviar e-mail"
     Quando o usuário marca a tarefa "Enviar e-mail" como "pendente"
     Então a tarefa "Enviar e-mail" deve estar com o status "pendente"
+
+  @persistencia
+  Cenário: Tarefa criada permanece após reiniciar o aplicativo
+    Dado que existe uma tarefa cadastrada com o título "Tarefa persistente"
+    Quando o aplicativo é fechado completamente
+    E o aplicativo é reaberto
+    Então a tarefa "Tarefa persistente" deve ser exibida na lista de tarefas
+
+  @persistencia
+  Cenário: Status de conclusão da tarefa permanece após reiniciar o aplicativo
+    Dado que existe uma tarefa concluída com o título "Tarefa concluída persistente"
+    Quando o aplicativo é fechado completamente
+    E o aplicativo é reaberto
+    Então a tarefa "Tarefa concluída persistente" deve estar com o status "concluída"
   

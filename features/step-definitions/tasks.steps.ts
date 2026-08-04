@@ -4,6 +4,8 @@ import { tasksPage } from "../pageobjects/tasks.page";
 import { createTaskPage } from "../pageobjects/create-task.page";
 import { updateTaskPage } from "../pageobjects/update-task.page";
 
+const APP_ID = 'org.tasks';
+
 Given('o usuário está na tela principal de listagem de tarefas', async () => {
     const isWelcomePageDisplayed = await welcomePage.continueWithoutSyncButton.isDisplayed();
     if (isWelcomePageDisplayed) {
@@ -138,6 +140,14 @@ When('cancela a confirmação de exclusão', async () => {
     const cancelDeleteButton = updateTaskPage.cancelDeleteButton;
     await cancelDeleteButton.waitForDisplayed();
     await cancelDeleteButton.click();
+});
+
+When('o aplicativo é fechado completamente', async () => {
+    await driver.terminateApp(APP_ID);
+});
+
+When('o aplicativo é reaberto', async () => {
+    await driver.activateApp(APP_ID);
 });
 
 Then('a tarefa {string} deve ser exibida na lista de tarefas', async (title: string) => {
