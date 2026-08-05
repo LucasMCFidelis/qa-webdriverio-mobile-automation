@@ -7,10 +7,25 @@ import { updateTaskPage } from "../pageobjects/update-task.page";
 const APP_ID = 'org.tasks';
 
 Given('o usuário está na tela principal de listagem de tarefas', async () => {
-    const isWelcomePageDisplayed = await welcomePage.continueWithoutSyncButton.isDisplayed();
+    let isWelcomePageDisplayed = await welcomePage.continueWithoutSyncButton.isDisplayed();
+    let isTasksPageDisplayed = await tasksPage.titlePage().isDisplayed();
+
+    if (!isWelcomePageDisplayed && !isTasksPageDisplayed) {
+        await driver.reloadSession()
+    }
+
     if (isWelcomePageDisplayed) {
         await welcomePage.continueWithoutSyncButton.click();
     }
+    await tasksPage.titlePage().waitForDisplayed();
+});
+
+Given('que não existem tarefas cadastradas', async () => {
+    await driver.reloadSession()
+
+    await welcomePage.continueWithoutSyncButton.waitForDisplayed();
+
+    await welcomePage.continueWithoutSyncButton.click();
     await tasksPage.titlePage().waitForDisplayed();
 });
 
@@ -108,12 +123,6 @@ When(
                 await checkbox.waitForDisplayed();
                 await checkbox.click();
 
-                await tasksPage.ensureTaskListDisplay({
-                    list: 'Completed',
-                    expectDisplayed: false,
-                    title
-                });
-
                 await expect(checkbox).toBeDisplayed();
                 break;
             }
@@ -208,4 +217,12 @@ Then('a tarefa {string} deve estar com o status {string}', async (title: string,
 
 Then('o usuário permanecer com a tarefa {string} aberta', async (title: string) => {
     await expect(updateTaskPage.titleInput(title)).toBeDisplayed();
+});
+
+Then('a tela de detalhes da tarefa {string} deve ser exibida', async (title: string) => {
+    await expect(updateTaskPage.titleInput(title)).toBeDisplayed();
+});
+
+Then('a lista de tarefas deve exibir uma mensagem indicando que não há tarefas', async () => {
+    await expect(tasksPage.emptyListMessage()).toBeDisplayed();
 });

@@ -62,6 +62,10 @@ class TasksPage {
       await taskListHeader.click()
     }
   }
+
+  emptyListMessage() {
+    return $('//*[@text="There are no tasks here."]')
+  }
 }
 
 export const tasksPage = new TasksPage()
