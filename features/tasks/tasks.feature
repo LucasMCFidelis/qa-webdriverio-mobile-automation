@@ -6,7 +6,7 @@ Funcionalidade: Gerenciamento de Tarefas
 
   @navegacao
   Cenário: Acessar os detalhes de uma tarefa a partir da lista
-    Dado o usuário está na tela principal de listagem de tarefas
+    Dado que o usuário está na tela principal de listagem de tarefas
     E que existe uma tarefa cadastrada com o título "Reunião de equipe"
     Quando o usuário abre a tarefa "Reunião de equipe"
     Então a tela de detalhes da tarefa "Reunião de equipe" deve ser exibida
@@ -18,6 +18,6 @@ Funcionalidade: Gerenciamento de Tarefas
 
   @usabilidade
   Cenário: Tarefa recém-criada aparece imediatamente na lista
-    Dado o usuário está na tela principal de listagem de tarefas
+    Dado que o usuário está na tela principal de listagem de tarefas
     Quando o usuário cria uma tarefa com o título "Tarefa em tempo real"
     Então a tarefa "Tarefa em tempo real" deve ser exibida na lista de tarefas

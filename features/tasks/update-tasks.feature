@@ -7,7 +7,7 @@ Funcionalidade: Edição de Tarefas
 
   Contexto:
     Dado que o aplicativo Tasks.org foi iniciado
-    E o usuário está na tela principal de listagem de tarefas
+    E que o usuário está na tela principal de listagem de tarefas
 
   @edicao
   Cenário: Editar o título de uma tarefa existente

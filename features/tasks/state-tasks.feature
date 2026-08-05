@@ -7,7 +7,7 @@ Funcionalidade: Gerenciamento de estados das Tarefas
 
   Contexto:
     Dado que o aplicativo Tasks.org foi iniciado
-    E o usuário está na tela principal de listagem de tarefas
+    E que o usuário está na tela principal de listagem de tarefas
 
   @conclusao @smoke
   Cenário: Concluir uma tarefa pendente

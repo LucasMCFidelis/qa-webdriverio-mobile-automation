@@ -1,9 +1,9 @@
 class WelcomePage {
-    get addAccountButton() {
-        return $('//*[@text="Add account"]')
-    }
+  get addAccountButton() {
+    return $('//*[@text="Add account"]')
+  }
 
-    get continueWithoutSyncButton() {
+  get continueWithoutSyncButton() {
     return $('//*[@text="Continue without sync"]')
   }
 }

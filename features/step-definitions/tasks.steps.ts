@@ -6,9 +6,9 @@ import { updateTaskPage } from "../pageobjects/update-task.page";
 
 const APP_ID = 'org.tasks';
 
-Given('o usuário está na tela principal de listagem de tarefas', async () => {
+Given('que o usuário está na tela principal de listagem de tarefas', async () => {
     let isWelcomePageDisplayed = await welcomePage.continueWithoutSyncButton.isDisplayed();
-    let isTasksPageDisplayed = await tasksPage.titlePage().isDisplayed();
+    let isTasksPageDisplayed = await tasksPage.titlePage.isDisplayed();
 
     if (!isWelcomePageDisplayed && !isTasksPageDisplayed) {
         await driver.reloadSession()
@@ -17,7 +17,7 @@ Given('o usuário está na tela principal de listagem de tarefas', async () => {
     if (isWelcomePageDisplayed) {
         await welcomePage.continueWithoutSyncButton.click();
     }
-    await tasksPage.titlePage().waitForDisplayed();
+    await tasksPage.titlePage.waitForDisplayed();
 });
 
 Given('que não existem tarefas cadastradas', async () => {
@@ -26,7 +26,7 @@ Given('que não existem tarefas cadastradas', async () => {
     await welcomePage.continueWithoutSyncButton.waitForDisplayed();
 
     await welcomePage.continueWithoutSyncButton.click();
-    await tasksPage.titlePage().waitForDisplayed();
+    await tasksPage.titlePage.waitForDisplayed();
 });
 
 Given('que existe uma tarefa cadastrada com o título {string}', async (title: string) => {
@@ -58,7 +58,7 @@ When('confirma a criação da tarefa', async () => {
 
 When('cancela a criação sem salvar', async () => {
     await createTaskPage.cancelFillForm();
-    await tasksPage.titlePage().waitForDisplayed();
+    await tasksPage.titlePage.waitForDisplayed();
 });
 
 When('tenta confirmar a criação sem informar um título', async () => {
@@ -88,7 +88,7 @@ When('salva as alterações', async () => {
 
 When('descarta as alterações sem salvar', async () => {
     await updateTaskPage.cancelFillForm();
-    await tasksPage.titlePage().waitForDisplayed();
+    await tasksPage.titlePage.waitForDisplayed();
 });
 
 When(
@@ -165,7 +165,7 @@ Then('a tarefa {string} deve ser exibida na lista de tarefas', async (title: str
         expectDisplayed: true,
         title
     });
-    await tasksPage.titlePage().waitForDisplayed();
+    await tasksPage.titlePage.waitForDisplayed();
 
     const taskTitle = tasksPage.taskTitle(title);
     await taskTitle.waitForDisplayed();
@@ -215,7 +215,7 @@ Then('a tarefa {string} deve estar com o status {string}', async (title: string,
     }
 });
 
-Then('o usuário permanecer com a tarefa {string} aberta', async (title: string) => {
+Then('o usuário deve permanecer com a tarefa {string} aberta', async (title: string) => {
     await expect(updateTaskPage.titleInput(title)).toBeDisplayed();
 });
 
@@ -224,5 +224,5 @@ Then('a tela de detalhes da tarefa {string} deve ser exibida', async (title: str
 });
 
 Then('a lista de tarefas deve exibir uma mensagem indicando que não há tarefas', async () => {
-    await expect(tasksPage.emptyListMessage()).toBeDisplayed();
+    await expect(tasksPage.emptyListMessage).toBeDisplayed();
 });

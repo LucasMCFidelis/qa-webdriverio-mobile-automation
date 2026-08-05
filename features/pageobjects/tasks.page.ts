@@ -1,10 +1,14 @@
 class TasksPage {
-  titlePage() {
+  get titlePage() {
     return $('//*[@text="My Tasks"]')
   }
 
   get createTaskButton() {
     return $('~Create new task')
+  }
+
+  get emptyListMessage() {
+    return $('//*[@text="There are no tasks here."]')
   }
 
   taskListHeader(list: string = 'Completed') {
@@ -61,10 +65,6 @@ class TasksPage {
     if (expectDisplayed != isDisplayed) {
       await taskListHeader.click()
     }
-  }
-
-  emptyListMessage() {
-    return $('//*[@text="There are no tasks here."]')
   }
 }
 

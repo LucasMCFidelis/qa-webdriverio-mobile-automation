@@ -12,8 +12,6 @@ class UpdateTaskPage extends TaskFormComponent {
   get cancelDeleteButton() {
     return $('//android.widget.Button[@text="Cancel"]')
   }
-
-
 }
 
 export const updateTaskPage = new UpdateTaskPage()

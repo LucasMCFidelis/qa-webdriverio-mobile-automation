@@ -7,7 +7,7 @@ Funcionalidade: Exclusão de Tarefas
 
   Contexto:
     Dado que o aplicativo Tasks.org foi iniciado
-    E o usuário está na tela principal de listagem de tarefas
+    E que o usuário está na tela principal de listagem de tarefas
     E que existe uma tarefa cadastrada com o título "Tarefa a ser excluída"
 
   @exclusao @smoke
@@ -22,4 +22,4 @@ Funcionalidade: Exclusão de Tarefas
     Quando o usuário abre a tarefa "Tarefa a ser excluída"
     E o usuário inicia a exclusão da tarefa
     E cancela a confirmação de exclusão
-    Então o usuário permanecer com a tarefa "Tarefa a ser excluída" aberta
+    Então o usuário deve permanecer com a tarefa "Tarefa a ser excluída" aberta
