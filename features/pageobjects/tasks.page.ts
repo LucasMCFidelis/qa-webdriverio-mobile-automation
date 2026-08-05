@@ -1,3 +1,5 @@
+import { TasksList, tasksLists } from "../constants/tasks-lists";
+
 class TasksPage {
   get titlePage() {
     return $('//*[@text="My Tasks"]')
@@ -11,7 +13,7 @@ class TasksPage {
     return $('//*[@text="There are no tasks here."]')
   }
 
-  taskListHeader(list: string = 'Completed') {
+  taskListHeader(list: TasksList = tasksLists.completed) {
     return $(
       `//*[@resource-id="org.tasks:id/header" and @text="${list}"]/..`
     );
@@ -50,7 +52,7 @@ class TasksPage {
     expectDisplayed,
     title
   }: {
-    list: string,
+    list: TasksList,
     expectDisplayed: boolean,
     title: string
   }) {

@@ -3,8 +3,9 @@ import { welcomePage } from "../pageobjects/welcome.page";
 import { tasksPage } from "../pageobjects/tasks.page";
 import { createTaskPage } from "../pageobjects/create-task.page";
 import { updateTaskPage } from "../pageobjects/update-task.page";
-
-const APP_ID = 'org.tasks';
+import { APP_ID } from "../constants/app-id";
+import { tasksStatus, TasksStatus } from "../constants/tasks-status";
+import { tasksLists } from "../constants/tasks-lists";
 
 Given('que o usuário está na tela principal de listagem de tarefas', async () => {
     let isWelcomePageDisplayed = await welcomePage.continueWithoutSyncButton.isDisplayed();
@@ -93,16 +94,16 @@ When('descarta as alterações sem salvar', async () => {
 
 When(
     'o usuário marca a tarefa {string} como {string}',
-    async (title: string, status: string) => {
+    async (title: string, status: TasksStatus) => {
         switch (status.toLowerCase()) {
-            case 'concluída': {
+            case tasksStatus.completed: {
                 const checkbox = tasksPage.taskCheckbox(title);
 
                 await checkbox.waitForDisplayed();
                 await checkbox.click();
 
                 await tasksPage.ensureTaskListDisplay({
-                    list: 'Completed',
+                    list: tasksLists.completed,
                     expectDisplayed: true,
                     title
                 });
@@ -111,9 +112,9 @@ When(
                 break;
             }
 
-            case 'pendente': {
+            case tasksStatus.pending: {
                 await tasksPage.ensureTaskListDisplay({
-                    list: 'Completed',
+                    list: tasksLists.completed,
                     expectDisplayed: true,
                     title
                 });
@@ -161,7 +162,7 @@ When('o aplicativo é reaberto', async () => {
 
 Then('a tarefa {string} deve ser exibida na lista de tarefas', async (title: string) => {
     await tasksPage.ensureTaskListDisplay({
-        list: 'No due date',
+        list: tasksLists.noDate,
         expectDisplayed: true,
         title
     });
@@ -186,20 +187,20 @@ Then('uma mensagem informando que o título é obrigatório deve ser exibida', a
     await expect(createTaskPage.errorMessage('Title is required')).toBeDisplayed();
 });
 
-Then('a tarefa {string} deve estar com o status {string}', async (title: string, status: string) => {
+Then('a tarefa {string} deve estar com o status {string}', async (title: string, status: TasksStatus) => {
     switch (status.toLowerCase()) {
-        case 'pendente':
+        case tasksStatus.pending:
             await tasksPage.ensureTaskListDisplay({
-                list: 'No due date',
+                list: tasksLists.noDate,
                 expectDisplayed: false,
                 title
             });
             await expect(tasksPage.task(title)).not.toBeDisplayed();
             break;
 
-        case 'concluída':
+        case tasksStatus.completed:
             await tasksPage.ensureTaskListDisplay({
-                list: 'Completed',
+                list: tasksLists.completed,
                 expectDisplayed: true,
                 title
             });
@@ -210,8 +211,7 @@ Then('a tarefa {string} deve estar com o status {string}', async (title: string,
             break;
 
         default:
-            console.log(`Status ${status} não reconhecido`);
-            break;
+            throw new Error(`Status ${status} não reconhecido`);
     }
 });
 
