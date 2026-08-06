@@ -39,5 +39,5 @@ Funcionalidade: Criação de Tarefas
   Cenário: Tentar criar uma tarefa sem informar o título
     Quando o usuário inicia a criação de uma nova tarefa
     E tenta confirmar a criação sem informar um título
-    Então a criação da tarefa não deve ser concluída
-    E uma mensagem informando que o título é obrigatório deve ser exibida
+    Então uma mensagem informando que o título é obrigatório deve ser exibida
+    E a criação da tarefa não deve ser concluída
