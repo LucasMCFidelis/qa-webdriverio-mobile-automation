@@ -46,7 +46,6 @@ export const config: WebdriverIO.Config = {
     reporters: ['spec', ['allure', {
         outputDir: 'allure-results',
         disableWebdriverStepsReporting: true,
-        disableWebdriverScreenshotsReporting: true,
         addConsoleLogs: true,
         reportedEnvironmentVars: {
             'NODE_VERSION': process.version,
@@ -87,6 +86,12 @@ export const config: WebdriverIO.Config = {
                 resolve()
             })
         })
+    },
+
+    afterStep: async function (step, scenario, { error, duration, passed }, context) {
+        if (error) {
+            await browser.takeScreenshot();
+        }
     }
 
     //

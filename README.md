@@ -143,7 +143,7 @@ Existe também a opção de rodar a execução os testes de forma filtrada utili
 ```bash
   npm run wdio -- --cucumberOpts.tags="@smoke"
 ```
-Além dos relatórios gerados com spec no terminal, o projeto também inclui reporte HTML usando Allure. Para visualizar, execute:
+Além dos relatórios gerados com spec no terminal, o projeto também inclui reporte HTML usando Allure, com captura automática de screenshot em cenários que falham. Para visualizar, execute:
 ```bash
   npm run open:report
 ```
@@ -152,5 +152,4 @@ Além dos relatórios gerados com spec no terminal, o projeto também inclui rep
 
 O projeto atualmente cobre o fluxo essencial de automação mobile, mas alguns pontos ainda estão em aberto como evolução futura:
 
-- **Evidências em falhas:** ainda não há captura automática de screenshot em cenários que falham.
 - **CI/CD:** o projeto ainda não possui um pipeline configurado (ex: GitHub Actions) para execução automática dos testes.
