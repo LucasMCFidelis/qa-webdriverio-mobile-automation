@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "open:report": "allure open",
     "wdio": "wdio run ./wdio.conf.ts"
   },
   "repository": {
@@ -21,6 +21,7 @@
   "homepage": "https://github.com/LucasMCFidelis/qa-webdriverio-mobile-automation#readme",
   "devDependencies": {
     "@types/node": "^26.1.2",
+    "@wdio/allure-reporter": "^9.30.1",
     "@wdio/appium-service": "^9.30.0",
     "@wdio/cli": "^9.30.0",
     "@wdio/cucumber-framework": "^9.30.0",
@@ -29,5 +30,8 @@
     "@wdio/spec-reporter": "^9.29.1",
     "appium-uiautomator2-driver": "^8.2.2",
     "expect-webdriverio": "^5.7.0"
+  },
+  "dependencies": {
+    "allure-commandline": "^2.43.0"
   }
 }

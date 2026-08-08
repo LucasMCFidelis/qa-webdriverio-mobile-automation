@@ -13,7 +13,8 @@
             "@wdio/globals/types",
             "expect-webdriverio",
             "@wdio/cucumber-framework",
-            "@wdio/appium-service"
+            "@wdio/appium-service",
+            "./types/allure-commandline.d.ts"
         ],
         "skipLibCheck": true,
         "noEmit": true,

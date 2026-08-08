@@ -1,4 +1,5 @@
 import path from "path";
+import allure from "allure-commandline"
 
 export const config: WebdriverIO.Config = {
     // ====================
@@ -42,7 +43,15 @@ export const config: WebdriverIO.Config = {
     connectionRetryCount: 3,
     services: ['appium'],
     framework: 'cucumber',
-    reporters: ['spec'],
+    reporters: ['spec', ['allure', {
+        outputDir: 'allure-results',
+        disableWebdriverStepsReporting: true,
+        disableWebdriverScreenshotsReporting: true,
+        addConsoleLogs: true,
+        reportedEnvironmentVars: {
+            'NODE_VERSION': process.version,
+        }
+    }]],
 
     cucumberOpts: {
         require: ['./features/step-definitions/**/*.steps.ts'],
@@ -59,6 +68,26 @@ export const config: WebdriverIO.Config = {
         ignoreUndefinedDefinitions: false
     },
 
+    onComplete: function (): Promise<void> {
+        const reportError = new Error('Could not generate Allure report')
+        const generation = allure(['generate', 'allure-results', '--clean'])
+        return new Promise((resolve, reject) => {
+            const generationTimeout = setTimeout(
+                () => reject(reportError),
+                5000)
+
+            generation.on('exit', function (exitCode: number) {
+                clearTimeout(generationTimeout)
+
+                if (exitCode !== 0) {
+                    return reject(reportError)
+                }
+
+                console.log('Allure report successfully generated')
+                resolve()
+            })
+        })
+    }
 
     //
     // =====
