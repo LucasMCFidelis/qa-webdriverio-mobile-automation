@@ -74,7 +74,7 @@ export const config: WebdriverIO.Config = {
         return new Promise((resolve, reject) => {
             const generationTimeout = setTimeout(
                 () => reject(reportError),
-                5000)
+                30000)
 
             generation.on('exit', function (exitCode: number) {
                 clearTimeout(generationTimeout)
