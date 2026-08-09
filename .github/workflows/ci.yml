@@ -38,7 +38,13 @@ jobs:
         run: npm ci
 
       - name: Instalar driver UiAutomator2 do Appium
-        run: npx appium driver install uiautomator2
+        run: |
+          INSTALLED_DRIVERS=$(npx appium driver list --installed 2>&1 || true)
+          if echo "$INSTALLED_DRIVERS" | grep -q uiautomator2; then
+            echo "Driver uiautomator2 já instalado, pulando."
+          else
+            npx appium driver install uiautomator2
+          fi
 
       - name: Configurar Android SDK
         uses: android-actions/setup-android@v3
