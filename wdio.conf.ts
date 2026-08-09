@@ -1,5 +1,6 @@
 import path from "path";
 import allure from "allure-commandline"
+import 'dotenv/config'; 
 
 export const config: WebdriverIO.Config = {
     // ====================
@@ -23,11 +24,11 @@ export const config: WebdriverIO.Config = {
     maxInstances: 1,
     capabilities: [{
         platformName: 'Android',
-        'appium:deviceName': 'Pixel 7',
-        'appium:platformVersion': '13.0',
+        'appium:deviceName': process.env.DEVICE_NAME ?? 'Pixel 7',
+        'appium:platformVersion': process.env.ANDROID_PLATFORM_VERSION ?? '13.0',
         'appium:app': path.join(
             process.cwd(),
-            './app/android/tasks-fdroid-15.8.apk'
+            process.env.APP_PATH ?? './app/android/tasks-fdroid-15.8.apk'
         ),
         'appium:appActivity': 'com.todoroo.astrid.activity.TaskListActivity',
         'appium:automationName': 'UiAutomator2'

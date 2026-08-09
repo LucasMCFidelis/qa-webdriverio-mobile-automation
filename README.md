@@ -58,7 +58,7 @@ Os cenários são marcados com tags do Cucumber, o que permite executar apenas u
 Exemplo combinando tags, executando os testes de smoke mas ignorando fluxos negativos:
 
 ```bash
-  npm run wdio -- --cucumberOpts.tags="@smoke and not @negativo"
+  npm run wdio -- --cucumberOpts.tagExpression="@smoke and not @negativo"
 ```
 
 ## Estrutura de pastas
@@ -115,23 +115,29 @@ Caso não possua o appium instalado, é necessario realizar a instalação de fo
 ```bash
   npm install -g appium
 ```
-Configuração das capabilities deve ser verificada e atualizada em `wdio.conf.ts`.
+
+Copiar o arquivo de exemplo das variáveis de ambiente
+```bash
+  cp .env.example .env
+```
+
+Configuração das capabilities deve ser verificada em `wdio.conf.ts` e pode ser atualizada através de variáveis de ambiente.
 ```json
 capabilities: [{
     platformName: 'Android',
-    'appium:deviceName': 'Pixel 7',
-    'appium:platformVersion': '13.0',
+    'appium:deviceName': process.env.DEVICE_NAME ?? 'Pixel 7',
+    'appium:platformVersion': process.env.ANDROID_PLATFORM_VERSION ?? '13.0',
     'appium:app': path.join(
         process.cwd(),
-        './app/android/tasks-fdroid-15.8.apk'
+        process.env.APP_PATH ?? './app/android/tasks-fdroid-15.8.apk'
     ),
     'appium:appActivity': 'com.todoroo.astrid.activity.TaskListActivity',
     'appium:automationName': 'UiAutomator2'
 }],
 ```
 Observações:
-- Atualmente o projeto carrega uma versão do apk em `app/android` utilizado para teste, que pode ser atualizada caso necessario.
-- As capabilities recomendadas para atualização são `appium:deviceName` e `appium:platformVersion` para que correspondam as configurações do device emulado para teste.
+- Atualmente o projeto carrega uma versão do apk em `app/android`, e o caminho para esse arquivo é usado como valor default para carregamento do app para testes. Então a atualização desse caminho é opcional, e pode ser realizada através da variavel de ambiente `APP_PATH`.
+- As capabilities que precisam necessariamente de atualização são `appium:deviceName` e `appium:platformVersion`, respectivamente atreladas as variáveis de ambiente `DEVICE_NAME` e `ANDROID_PLATFORM_VERSION`. Essa atualização é necessaria para que correspondam as configurações do device emulado para teste.
 
 ## Execução dos Testes
 
@@ -141,7 +147,7 @@ Para rodar os testes, é necessario estar com o emulador aberto e executar o seg
 ```
 Existe também a opção de rodar a execução os testes de forma filtrada utilizando tags do cucumber. Exemplo de como executar filtrando por testes @smoke
 ```bash
-  npm run wdio -- --cucumberOpts.tags="@smoke"
+  npm run wdio -- --cucumberOpts.tagExpression="@smoke"
 ```
 Além dos relatórios gerados com spec no terminal, o projeto também inclui reporte HTML usando Allure, com captura automática de screenshot em cenários que falham. Para visualizar, execute:
 ```bash
