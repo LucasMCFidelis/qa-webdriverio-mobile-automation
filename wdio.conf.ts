@@ -28,7 +28,7 @@ export const config: WebdriverIO.Config = {
         'appium:platformVersion': process.env.ANDROID_PLATFORM_VERSION ?? '13.0',
         'appium:app': path.join(
             process.cwd(),
-            process.env.APP_PATH ?? './app/android/tasks-fdroid-15.8.apk'
+            process.env.APP_PATH || './app/android/tasks-fdroid-15.8.apk'
         ),
         'appium:appActivity': 'com.todoroo.astrid.activity.TaskListActivity',
         'appium:automationName': 'UiAutomator2'
