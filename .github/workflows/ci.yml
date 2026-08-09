@@ -37,6 +37,9 @@ jobs:
       - name: Instalar dependências
         run: npm ci
 
+      - name: Instalar driver UiAutomator2 do Appium
+        run: npx appium driver install uiautomator2
+
       - name: Configurar Android SDK
         uses: android-actions/setup-android@v3
 
