@@ -58,7 +58,7 @@ Os cenários são marcados com tags do Cucumber, o que permite executar apenas u
 Exemplo combinando tags, executando os testes de smoke mas ignorando fluxos negativos:
 
 ```bash
-  npm run wdio -- --cucumberOpts.tagExpression="@smoke and not @negativo"
+  npm run wdio -- --cucumberOpts.tags="@smoke and not @negativo"
 ```
 
 ## Estrutura de pastas
@@ -147,15 +147,29 @@ Para rodar os testes, é necessario estar com o emulador aberto e executar o seg
 ```
 Existe também a opção de rodar a execução os testes de forma filtrada utilizando tags do cucumber. Exemplo de como executar filtrando por testes @smoke
 ```bash
-  npm run wdio -- --cucumberOpts.tagExpression="@smoke"
+  npm run wdio -- --cucumberOpts.tags="@smoke"
 ```
 Além dos relatórios gerados com spec no terminal, o projeto também inclui reporte HTML usando Allure, com captura automática de screenshot em cenários que falham. Para visualizar, execute:
 ```bash
   npm run open:report
 ```
 
+## Pipeline de integração contínua
+
+O projeto inclui uma pipeline em `./.github/workflows/ci.yml` responsável pela integração contínua, incluindo estratégia de cache para otimização da execução. Além disso, também adota uma abordagem fail-fast, executando primeiro os testes de `@smoke` para, após essa validação, seguir para a execução completa (excluindo os de smoke, para evitar consumo desnecessário reexecutando cenários já validados).
+
+A pipeline é disparada em `push` e `pull_request` para a branch `main`, além de poder ser executada manualmente via `workflow_dispatch`, com a opção de filtrar os cenários executados por meio de tags do Cucumber.
+
+Ao final da execução, mesmo em caso de falha, o relatório de testes gerado pelo Allure é publicado como artefato do workflow, disponível para download na aba *Actions* do repositório.
+
+### Como visualizar esse relatório localmente
+Após realizar o download do artefato e descompactá-lo, acesse a pasta com algum terminal e execute:
+```bash
+npx allure open ./
+```
+
 ## Roadmap / Limitações conhecidas
 
 O projeto atualmente cobre o fluxo essencial de automação mobile, mas alguns pontos ainda estão em aberto como evolução futura:
 
-- **CI/CD:** o projeto ainda não possui um pipeline configurado (ex: GitHub Actions) para execução automática dos testes.
+- **CI/CD:** pipeline de integração contínua implementada via GitHub Actions (ver seção acima). Próximos passos possíveis: publicar o relatório Allure automaticamente no GitHub Pages.
