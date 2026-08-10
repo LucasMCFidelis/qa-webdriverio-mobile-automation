@@ -63,7 +63,7 @@ export const config: WebdriverIO.Config = {
         snippets: true,
         source: true,
         strict: false,
-        tagExpression: '',
+        tags: '',
         timeout: 60000,
         ignoreUndefinedDefinitions: false
     },
