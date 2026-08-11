@@ -1,0 +1,38 @@
+.........Console Logs.........
+
+2026-08-11T19:26:27.083Z INFO webdriver: COMMAND findElement("xpath", "//*[@resource-id="org.tasks:id/header" and @text="Completed"]/..")
+2026-08-11T19:26:27.083Z INFO webdriver: [POST] http://127.0.0.1:4723/session/dfb7a0ab-04ae-4b21-8af7-45eba7ea342a/element
+2026-08-11T19:26:27.083Z INFO webdriver: DATA {"using":"xpath","value":"//*[@resource-id=\"org.tasks:id/header\" and @text=\"Completed\"]/.."}
+2026-08-11T19:26:27.262Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-002a-ffff-ffff00000066',
+  ELEMENT: '00000000-0000-002a-ffff-ffff00000066'
+}
+2026-08-11T19:26:27.267Z INFO webdriver: COMMAND isElementDisplayed("00000000-0000-002a-ffff-ffff00000066")
+2026-08-11T19:26:27.268Z INFO webdriver: [GET] http://127.0.0.1:4723/session/dfb7a0ab-04ae-4b21-8af7-45eba7ea342a/element/00000000-0000-002a-ffff-ffff00000066/displayed
+2026-08-11T19:26:27.295Z INFO webdriver: RESULT true
+2026-08-11T19:26:27.295Z INFO webdriver: COMMAND isElementDisplayed("00000000-0000-002a-ffff-ffff00000066")
+2026-08-11T19:26:27.296Z INFO webdriver: [GET] http://127.0.0.1:4723/session/dfb7a0ab-04ae-4b21-8af7-45eba7ea342a/element/00000000-0000-002a-ffff-ffff00000066/displayed
+2026-08-11T19:26:27.314Z INFO webdriver: RESULT true
+2026-08-11T19:26:27.315Z INFO webdriver: COMMAND findElement("xpath", "//*[@resource-id="org.tasks:id/title" and @text="Revisar relatório"]/..")
+2026-08-11T19:26:27.315Z INFO webdriver: [POST] http://127.0.0.1:4723/session/dfb7a0ab-04ae-4b21-8af7-45eba7ea342a/element
+2026-08-11T19:26:27.315Z INFO webdriver: DATA {"using":"xpath","value":"//*[@resource-id=\"org.tasks:id/title\" and @text=\"Revisar relatório\"]/.."}
+2026-08-11T19:26:27.487Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-002a-ffff-ffff0000005c',
+  ELEMENT: '00000000-0000-002a-ffff-ffff0000005c'
+}
+2026-08-11T19:26:27.490Z INFO webdriver: COMMAND isElementDisplayed("00000000-0000-002a-ffff-ffff0000005c")
+2026-08-11T19:26:27.492Z INFO webdriver: [GET] http://127.0.0.1:4723/session/dfb7a0ab-04ae-4b21-8af7-45eba7ea342a/element/00000000-0000-002a-ffff-ffff0000005c/displayed
+2026-08-11T19:26:27.507Z INFO webdriver: RESULT true
+2026-08-11T19:26:27.507Z INFO webdriver: COMMAND findElement("xpath", "//*[@resource-id="org.tasks:id/title" and @text="Revisar relatório"]/..")
+2026-08-11T19:26:27.508Z INFO webdriver: [POST] http://127.0.0.1:4723/session/dfb7a0ab-04ae-4b21-8af7-45eba7ea342a/element
+2026-08-11T19:26:27.508Z INFO webdriver: DATA {"using":"xpath","value":"//*[@resource-id=\"org.tasks:id/title\" and @text=\"Revisar relatório\"]/.."}
+2026-08-11T19:26:27.577Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-002a-ffff-ffff0000005c',
+  ELEMENT: '00000000-0000-002a-ffff-ffff0000005c'
+}
+2026-08-11T19:26:27.581Z INFO webdriver: COMMAND isElementDisplayed("00000000-0000-002a-ffff-ffff0000005c")
+2026-08-11T19:26:27.581Z INFO webdriver: [GET] http://127.0.0.1:4723/session/dfb7a0ab-04ae-4b21-8af7-45eba7ea342a/element/00000000-0000-002a-ffff-ffff0000005c/displayed
+2026-08-11T19:26:27.600Z INFO webdriver: RESULT true
+2026-08-11T19:26:27.601Z INFO webdriver: COMMAND isElementDisplayed("00000000-0000-002a-ffff-ffff0000005c")
+2026-08-11T19:26:27.601Z INFO webdriver: [GET] http://127.0.0.1:4723/session/dfb7a0ab-04ae-4b21-8af7-45eba7ea342a/element/00000000-0000-002a-ffff-ffff0000005c/displayed
+2026-08-11T19:26:27.613Z INFO webdriver: RESULT true

@@ -1,0 +1,23 @@
+.........Console Logs.........
+
+2026-08-11T19:25:27.048Z INFO webdriver: COMMAND findElement("accessibility id", "Create new task")
+2026-08-11T19:25:27.048Z INFO webdriver: [POST] http://127.0.0.1:4723/session/0a3bd4f7-6cb0-471e-b825-96b29afe9ae9/element
+2026-08-11T19:25:27.049Z INFO webdriver: DATA {"using":"accessibility id","value":"Create new task"}
+2026-08-11T19:25:27.207Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-0013-ffff-ffff00000029',
+  ELEMENT: '00000000-0000-0013-ffff-ffff00000029'
+}
+2026-08-11T19:25:27.216Z INFO webdriver: COMMAND isElementDisplayed("00000000-0000-0013-ffff-ffff00000029")
+2026-08-11T19:25:27.216Z INFO webdriver: [GET] http://127.0.0.1:4723/session/0a3bd4f7-6cb0-471e-b825-96b29afe9ae9/element/00000000-0000-0013-ffff-ffff00000029/displayed
+2026-08-11T19:25:27.254Z INFO webdriver: RESULT true
+2026-08-11T19:25:27.254Z INFO webdriver: COMMAND findElement("accessibility id", "Create new task")
+2026-08-11T19:25:27.255Z INFO webdriver: [POST] http://127.0.0.1:4723/session/0a3bd4f7-6cb0-471e-b825-96b29afe9ae9/element
+2026-08-11T19:25:27.255Z INFO webdriver: DATA {"using":"accessibility id","value":"Create new task"}
+2026-08-11T19:25:27.378Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-0013-ffff-ffff00000029',
+  ELEMENT: '00000000-0000-0013-ffff-ffff00000029'
+}
+2026-08-11T19:25:27.382Z INFO webdriver: COMMAND elementClick("00000000-0000-0013-ffff-ffff00000029")
+2026-08-11T19:25:27.382Z INFO webdriver: [POST] http://127.0.0.1:4723/session/0a3bd4f7-6cb0-471e-b825-96b29afe9ae9/element/00000000-0000-0013-ffff-ffff00000029/click
+2026-08-11T19:25:27.382Z INFO webdriver: DATA {}
+2026-08-11T19:25:27.486Z INFO webdriver: RESULT null
