@@ -16,8 +16,8 @@ Desenvolvimento de automação de testes mobile Android para aplicação de gere
 - [Pré-requisitos](#pré-requisitos)
 - [Configurar para execução local](#configurar-para-execução-local)
 - [Execução dos Testes](#execução-dos-testes)
-- [Roadmap / Limitações conhecidas](#roadmap--limitações-conhecidas)
-- [Licença](#licença)
+- [Pipeline de integração contínua](#pipeline-de-integração-contínua)
+- [Como visualizar os relatórios dos testes em CI](#como-visualizar-os-relatórios-dos-testes-em-ci)
 
 ## Sobre o app testado
 
@@ -162,14 +162,16 @@ A pipeline é disparada em `push` e `pull_request` para a branch `main`, além d
 
 Ao final da execução, mesmo em caso de falha, o relatório de testes gerado pelo Allure é publicado como artefato do workflow, disponível para download na aba *Actions* do repositório.
 
-### Como visualizar esse relatório localmente
-Após realizar o download do artefato e descompactá-lo, acesse a pasta com algum terminal e execute:
+## Como visualizar os relatórios dos testes em CI
+
+### Localmente
+Após realizar o download do artefato `allure-report` e descompactá-lo, acesse a pasta com algum terminal e execute:
 ```bash
 npx allure open ./
 ```
+Isso deve abrir o relatório e redirecionar diretamente para o navegador.
 
-## Roadmap / Limitações conhecidas
+### GitHub Pages
+Você pode visualizar o relatório mais recente dos testes executados em CI acessando o link a seguir:
 
-O projeto atualmente cobre o fluxo essencial de automação mobile, mas alguns pontos ainda estão em aberto como evolução futura:
-
-- **CI/CD:** pipeline de integração contínua implementada via GitHub Actions (ver seção acima). Próximos passos possíveis: publicar o relatório Allure automaticamente no GitHub Pages.
+[![GitHub Pages](https://img.shields.io/badge/GitHub-Relatório_Allure-blue?logo=github)](https://lucasmcfidelis.github.io/qa-webdriverio-mobile-automation/) 
