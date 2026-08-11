@@ -1,0 +1,41 @@
+.........Console Logs.........
+
+2026-08-11T01:47:06.826Z INFO webdriver: COMMAND findElement("xpath", "//android.widget.EditText[@text="Task name"]")
+2026-08-11T01:47:06.827Z INFO webdriver: [POST] http://127.0.0.1:4723/session/0495ffcf-1d8c-4cba-af7a-54668ee5fdb9/element
+2026-08-11T01:47:06.827Z INFO webdriver: DATA {"using":"xpath","value":"//android.widget.EditText[@text=\"Task name\"]"}
+2026-08-11T01:47:08.167Z INFO webdriver: RESULT {
+  error: 'no such element',
+  message: 'An element could not be located on the page using the given search parameters.',
+  stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+    '    at AndroidUiautomator2Driver.findElOrEls (file:///home/runner/work/qa-webdriverio-mobile-automation/qa-webdriverio-mobile-automation/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/build/lib/commands/find.js:54:15)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n' +
+    '    at async AndroidUiautomator2Driver.findElOrElsWithProcessing (/home/runner/work/qa-webdriverio-mobile-automation/qa-webdriverio-mobile-automation/node_modules/@appium/base-driver/build/lib/basedriver/commands/find.js:12:16)\n' +
+    '    at async AndroidUiautomator2Driver.findElement (/home/runner/work/qa-webdriverio-mobile-automation/qa-webdriverio-mobile-automation/node_modules/@appium/base-driver/build/lib/basedriver/commands/find.js:28:16)\n' +
+    '    at async runCommandPromise (/home/runner/work/qa-webdriverio-mobile-automation/qa-webdriverio-mobile-automation/node_modules/@appium/base-driver/build/lib/basedriver/driver.js:119:24)'
+}
+2026-08-11T01:47:08.175Z INFO webdriver: COMMAND findElement("xpath", "//android.widget.EditText[@text="Task name"]")
+2026-08-11T01:47:08.176Z INFO webdriver: [POST] http://127.0.0.1:4723/session/0495ffcf-1d8c-4cba-af7a-54668ee5fdb9/element
+2026-08-11T01:47:08.176Z INFO webdriver: DATA {"using":"xpath","value":"//android.widget.EditText[@text=\"Task name\"]"}
+2026-08-11T01:47:09.726Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-0013-ffff-ffff00000030',
+  ELEMENT: '00000000-0000-0013-ffff-ffff00000030'
+}
+2026-08-11T01:47:09.730Z INFO webdriver: COMMAND isElementDisplayed("00000000-0000-0013-ffff-ffff00000030")
+2026-08-11T01:47:09.730Z INFO webdriver: [GET] http://127.0.0.1:4723/session/0495ffcf-1d8c-4cba-af7a-54668ee5fdb9/element/00000000-0000-0013-ffff-ffff00000030/displayed
+2026-08-11T01:47:10.976Z INFO webdriver: RESULT true
+2026-08-11T01:47:10.976Z INFO webdriver: COMMAND elementClick("00000000-0000-0013-ffff-ffff00000030")
+2026-08-11T01:47:10.976Z INFO webdriver: [POST] http://127.0.0.1:4723/session/0495ffcf-1d8c-4cba-af7a-54668ee5fdb9/element/00000000-0000-0013-ffff-ffff00000030/click
+2026-08-11T01:47:10.976Z INFO webdriver: DATA {}
+2026-08-11T01:47:11.195Z INFO webdriver: RESULT null
+2026-08-11T01:47:11.196Z INFO webdriver: COMMAND elementClear("00000000-0000-0013-ffff-ffff00000030")
+2026-08-11T01:47:11.196Z INFO webdriver: [POST] http://127.0.0.1:4723/session/0495ffcf-1d8c-4cba-af7a-54668ee5fdb9/element/00000000-0000-0013-ffff-ffff00000030/clear
+2026-08-11T01:47:11.197Z INFO webdriver: DATA {}
+2026-08-11T01:47:12.098Z INFO webdriver: RESULT null
+2026-08-11T01:47:12.102Z INFO webdriver: COMMAND elementClear("00000000-0000-0013-ffff-ffff00000030")
+2026-08-11T01:47:12.102Z INFO webdriver: [POST] http://127.0.0.1:4723/session/0495ffcf-1d8c-4cba-af7a-54668ee5fdb9/element/00000000-0000-0013-ffff-ffff00000030/clear
+2026-08-11T01:47:12.102Z INFO webdriver: DATA {}
+2026-08-11T01:47:12.794Z INFO webdriver: RESULT null
+2026-08-11T01:47:12.794Z INFO webdriver: COMMAND elementSendKeys("00000000-0000-0013-ffff-ffff00000030", "Comprar mantimentos")
+2026-08-11T01:47:12.795Z INFO webdriver: [POST] http://127.0.0.1:4723/session/0495ffcf-1d8c-4cba-af7a-54668ee5fdb9/element/00000000-0000-0013-ffff-ffff00000030/value
+2026-08-11T01:47:12.795Z INFO webdriver: DATA {"text":"Comprar mantimentos"}
+2026-08-11T01:47:14.076Z INFO webdriver: RESULT null

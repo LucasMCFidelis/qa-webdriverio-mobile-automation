@@ -1,0 +1,69 @@
+.........Console Logs.........
+
+2026-08-11T01:50:01.415Z INFO webdriver: COMMAND findElement("xpath", "//*[@resource-id="org.tasks:id/header" and @text="No due date"]/..")
+2026-08-11T01:50:01.415Z INFO webdriver: [POST] http://127.0.0.1:4723/session/d836b8ba-9676-40d2-be45-55a05b6d04fd/element
+2026-08-11T01:50:01.415Z INFO webdriver: DATA {"using":"xpath","value":"//*[@resource-id=\"org.tasks:id/header\" and @text=\"No due date\"]/.."}
+2026-08-11T01:50:02.385Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-004b-ffff-ffff00000028',
+  ELEMENT: '00000000-0000-004b-ffff-ffff00000028'
+}
+2026-08-11T01:50:02.388Z INFO webdriver: COMMAND isElementDisplayed("00000000-0000-004b-ffff-ffff00000028")
+2026-08-11T01:50:02.388Z INFO webdriver: [GET] http://127.0.0.1:4723/session/d836b8ba-9676-40d2-be45-55a05b6d04fd/element/00000000-0000-004b-ffff-ffff00000028/displayed
+2026-08-11T01:50:03.093Z INFO webdriver: RESULT true
+2026-08-11T01:50:03.093Z INFO webdriver: COMMAND isElementDisplayed("00000000-0000-004b-ffff-ffff00000028")
+2026-08-11T01:50:03.094Z INFO webdriver: [GET] http://127.0.0.1:4723/session/d836b8ba-9676-40d2-be45-55a05b6d04fd/element/00000000-0000-004b-ffff-ffff00000028/displayed
+2026-08-11T01:50:03.104Z INFO webdriver: RESULT true
+2026-08-11T01:50:03.104Z INFO webdriver: COMMAND findElement("xpath", "//*[@resource-id="org.tasks:id/title" and @text="Tarefa persistente"]/..")
+2026-08-11T01:50:03.104Z INFO webdriver: [POST] http://127.0.0.1:4723/session/d836b8ba-9676-40d2-be45-55a05b6d04fd/element
+2026-08-11T01:50:03.104Z INFO webdriver: DATA {"using":"xpath","value":"//*[@resource-id=\"org.tasks:id/title\" and @text=\"Tarefa persistente\"]/.."}
+2026-08-11T01:50:03.145Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-004b-ffff-ffff00000036',
+  ELEMENT: '00000000-0000-004b-ffff-ffff00000036'
+}
+2026-08-11T01:50:03.147Z INFO webdriver: COMMAND isElementDisplayed("00000000-0000-004b-ffff-ffff00000036")
+2026-08-11T01:50:03.147Z INFO webdriver: [GET] http://127.0.0.1:4723/session/d836b8ba-9676-40d2-be45-55a05b6d04fd/element/00000000-0000-004b-ffff-ffff00000036/displayed
+2026-08-11T01:50:03.157Z INFO webdriver: RESULT true
+2026-08-11T01:50:03.157Z INFO webdriver: COMMAND findElement("xpath", "//*[@text="My Tasks"]")
+2026-08-11T01:50:03.157Z INFO webdriver: [POST] http://127.0.0.1:4723/session/d836b8ba-9676-40d2-be45-55a05b6d04fd/element
+2026-08-11T01:50:03.157Z INFO webdriver: DATA {"using":"xpath","value":"//*[@text=\"My Tasks\"]"}
+2026-08-11T01:50:03.205Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-004b-ffff-ffff0000000f',
+  ELEMENT: '00000000-0000-004b-ffff-ffff0000000f'
+}
+2026-08-11T01:50:03.208Z INFO webdriver: COMMAND isElementDisplayed("00000000-0000-004b-ffff-ffff0000000f")
+2026-08-11T01:50:03.208Z INFO webdriver: [GET] http://127.0.0.1:4723/session/d836b8ba-9676-40d2-be45-55a05b6d04fd/element/00000000-0000-004b-ffff-ffff0000000f/displayed
+2026-08-11T01:50:03.217Z INFO webdriver: RESULT true
+2026-08-11T01:50:03.218Z INFO webdriver: COMMAND findElement("xpath", "//*[@resource-id="org.tasks:id/title" and @text="Tarefa persistente"]/..")
+2026-08-11T01:50:03.218Z INFO webdriver: [POST] http://127.0.0.1:4723/session/d836b8ba-9676-40d2-be45-55a05b6d04fd/element
+2026-08-11T01:50:03.218Z INFO webdriver: DATA {"using":"xpath","value":"//*[@resource-id=\"org.tasks:id/title\" and @text=\"Tarefa persistente\"]/.."}
+2026-08-11T01:50:03.255Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-004b-ffff-ffff00000036',
+  ELEMENT: '00000000-0000-004b-ffff-ffff00000036'
+}
+2026-08-11T01:50:03.257Z INFO webdriver: COMMAND findElementFromElement("00000000-0000-004b-ffff-ffff00000036", "xpath", "//*[@resource-id="org.tasks:id/title"]")
+2026-08-11T01:50:03.257Z INFO webdriver: [POST] http://127.0.0.1:4723/session/d836b8ba-9676-40d2-be45-55a05b6d04fd/element/00000000-0000-004b-ffff-ffff00000036/element
+2026-08-11T01:50:03.257Z INFO webdriver: DATA {"using":"xpath","value":"//*[@resource-id=\"org.tasks:id/title\"]"}
+2026-08-11T01:50:03.276Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-004b-ffff-ffff00000039',
+  ELEMENT: '00000000-0000-004b-ffff-ffff00000039'
+}
+2026-08-11T01:50:03.278Z INFO webdriver: COMMAND isElementDisplayed("00000000-0000-004b-ffff-ffff00000039")
+2026-08-11T01:50:03.278Z INFO webdriver: [GET] http://127.0.0.1:4723/session/d836b8ba-9676-40d2-be45-55a05b6d04fd/element/00000000-0000-004b-ffff-ffff00000039/displayed
+2026-08-11T01:50:03.288Z INFO webdriver: RESULT true
+2026-08-11T01:50:03.289Z INFO webdriver: COMMAND findElement("xpath", "//*[@resource-id="org.tasks:id/title" and @text="Tarefa persistente"]/..")
+2026-08-11T01:50:03.289Z INFO webdriver: [POST] http://127.0.0.1:4723/session/d836b8ba-9676-40d2-be45-55a05b6d04fd/element
+2026-08-11T01:50:03.289Z INFO webdriver: DATA {"using":"xpath","value":"//*[@resource-id=\"org.tasks:id/title\" and @text=\"Tarefa persistente\"]/.."}
+2026-08-11T01:50:03.329Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-004b-ffff-ffff00000036',
+  ELEMENT: '00000000-0000-004b-ffff-ffff00000036'
+}
+2026-08-11T01:50:03.331Z INFO webdriver: COMMAND findElementFromElement("00000000-0000-004b-ffff-ffff00000036", "xpath", "//*[@resource-id="org.tasks:id/completeBox"]")
+2026-08-11T01:50:03.331Z INFO webdriver: [POST] http://127.0.0.1:4723/session/d836b8ba-9676-40d2-be45-55a05b6d04fd/element/00000000-0000-004b-ffff-ffff00000036/element
+2026-08-11T01:50:03.331Z INFO webdriver: DATA {"using":"xpath","value":"//*[@resource-id=\"org.tasks:id/completeBox\"]"}
+2026-08-11T01:50:03.350Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-004b-ffff-ffff00000037',
+  ELEMENT: '00000000-0000-004b-ffff-ffff00000037'
+}
+2026-08-11T01:50:03.353Z INFO webdriver: COMMAND isElementDisplayed("00000000-0000-004b-ffff-ffff00000037")
+2026-08-11T01:50:03.353Z INFO webdriver: [GET] http://127.0.0.1:4723/session/d836b8ba-9676-40d2-be45-55a05b6d04fd/element/00000000-0000-004b-ffff-ffff00000037/displayed
+2026-08-11T01:50:03.362Z INFO webdriver: RESULT true

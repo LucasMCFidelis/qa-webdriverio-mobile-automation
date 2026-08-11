@@ -1,0 +1,16 @@
+.........Console Logs.........
+
+2026-08-11T01:49:36.780Z INFO webdriver: COMMAND findElement("xpath", "//android.widget.Button[@text="Cancel"]")
+2026-08-11T01:49:36.780Z INFO webdriver: [POST] http://127.0.0.1:4723/session/2a648d85-ef12-4784-8b6c-937ec9d887f6/element
+2026-08-11T01:49:36.780Z INFO webdriver: DATA {"using":"xpath","value":"//android.widget.Button[@text=\"Cancel\"]"}
+2026-08-11T01:49:36.805Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-003f-ffff-ffff000000ac',
+  ELEMENT: '00000000-0000-003f-ffff-ffff000000ac'
+}
+2026-08-11T01:49:36.809Z INFO webdriver: COMMAND isElementDisplayed("00000000-0000-003f-ffff-ffff000000ac")
+2026-08-11T01:49:36.809Z INFO webdriver: [GET] http://127.0.0.1:4723/session/2a648d85-ef12-4784-8b6c-937ec9d887f6/element/00000000-0000-003f-ffff-ffff000000ac/displayed
+2026-08-11T01:49:36.819Z INFO webdriver: RESULT true
+2026-08-11T01:49:36.819Z INFO webdriver: COMMAND elementClick("00000000-0000-003f-ffff-ffff000000ac")
+2026-08-11T01:49:36.819Z INFO webdriver: [POST] http://127.0.0.1:4723/session/2a648d85-ef12-4784-8b6c-937ec9d887f6/element/00000000-0000-003f-ffff-ffff000000ac/click
+2026-08-11T01:49:36.820Z INFO webdriver: DATA {}
+2026-08-11T01:49:36.873Z INFO webdriver: RESULT null

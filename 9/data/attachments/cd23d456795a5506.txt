@@ -1,0 +1,19 @@
+.........Console Logs.........
+
+2026-08-11T01:49:05.534Z INFO webdriver: COMMAND findElement("xpath", "//*[@resource-id="org.tasks:id/title" and @text="Tarefa temporária"]/..")
+2026-08-11T01:49:05.534Z INFO webdriver: [POST] http://127.0.0.1:4723/session/02356b5d-d0b8-4472-9a93-3d707a7cd707/element
+2026-08-11T01:49:05.534Z INFO webdriver: DATA {"using":"xpath","value":"//*[@resource-id=\"org.tasks:id/title\" and @text=\"Tarefa temporária\"]/.."}
+2026-08-11T01:49:05.568Z INFO webdriver: RESULT {
+  error: 'no such element',
+  message: 'An element could not be located on the page using the given search parameters.',
+  stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+    '    at AndroidUiautomator2Driver.findElOrEls (file:///home/runner/work/qa-webdriverio-mobile-automation/qa-webdriverio-mobile-automation/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/build/lib/commands/find.js:54:15)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n' +
+    '    at async AndroidUiautomator2Driver.findElOrElsWithProcessing (/home/runner/work/qa-webdriverio-mobile-automation/qa-webdriverio-mobile-automation/node_modules/@appium/base-driver/build/lib/basedriver/commands/find.js:12:16)\n' +
+    '    at async AndroidUiautomator2Driver.findElement (/home/runner/work/qa-webdriverio-mobile-automation/qa-webdriverio-mobile-automation/node_modules/@appium/base-driver/build/lib/basedriver/commands/find.js:28:16)\n' +
+    '    at async runCommandPromise (/home/runner/work/qa-webdriverio-mobile-automation/qa-webdriverio-mobile-automation/node_modules/@appium/base-driver/build/lib/basedriver/driver.js:119:24)'
+}
+2026-08-11T01:49:05.571Z INFO webdriver: COMMAND findElements("xpath", "//*[@resource-id="org.tasks:id/title" and @text="Tarefa temporária"]/..")
+2026-08-11T01:49:05.571Z INFO webdriver: [POST] http://127.0.0.1:4723/session/02356b5d-d0b8-4472-9a93-3d707a7cd707/elements
+2026-08-11T01:49:05.571Z INFO webdriver: DATA {"using":"xpath","value":"//*[@resource-id=\"org.tasks:id/title\" and @text=\"Tarefa temporária\"]/.."}
+2026-08-11T01:49:05.606Z INFO webdriver: RESULT []

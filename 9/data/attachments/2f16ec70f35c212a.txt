@@ -1,0 +1,69 @@
+.........Console Logs.........
+
+2026-08-11T01:48:58.061Z INFO webdriver: COMMAND findElement("xpath", "//*[@resource-id="org.tasks:id/header" and @text="No due date"]/..")
+2026-08-11T01:48:58.061Z INFO webdriver: [POST] http://127.0.0.1:4723/session/02356b5d-d0b8-4472-9a93-3d707a7cd707/element
+2026-08-11T01:48:58.061Z INFO webdriver: DATA {"using":"xpath","value":"//*[@resource-id=\"org.tasks:id/header\" and @text=\"No due date\"]/.."}
+2026-08-11T01:48:58.098Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-0033-ffff-ffff00000058',
+  ELEMENT: '00000000-0000-0033-ffff-ffff00000058'
+}
+2026-08-11T01:48:58.101Z INFO webdriver: COMMAND isElementDisplayed("00000000-0000-0033-ffff-ffff00000058")
+2026-08-11T01:48:58.102Z INFO webdriver: [GET] http://127.0.0.1:4723/session/02356b5d-d0b8-4472-9a93-3d707a7cd707/element/00000000-0000-0033-ffff-ffff00000058/displayed
+2026-08-11T01:48:58.114Z INFO webdriver: RESULT true
+2026-08-11T01:48:58.114Z INFO webdriver: COMMAND isElementDisplayed("00000000-0000-0033-ffff-ffff00000058")
+2026-08-11T01:48:58.114Z INFO webdriver: [GET] http://127.0.0.1:4723/session/02356b5d-d0b8-4472-9a93-3d707a7cd707/element/00000000-0000-0033-ffff-ffff00000058/displayed
+2026-08-11T01:48:58.132Z INFO webdriver: RESULT true
+2026-08-11T01:48:58.133Z INFO webdriver: COMMAND findElement("xpath", "//*[@resource-id="org.tasks:id/title" and @text="Preparar apresentação para segunda"]/..")
+2026-08-11T01:48:58.133Z INFO webdriver: [POST] http://127.0.0.1:4723/session/02356b5d-d0b8-4472-9a93-3d707a7cd707/element
+2026-08-11T01:48:58.133Z INFO webdriver: DATA {"using":"xpath","value":"//*[@resource-id=\"org.tasks:id/title\" and @text=\"Preparar apresentação para segunda\"]/.."}
+2026-08-11T01:48:58.181Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-0033-ffff-ffff000000c9',
+  ELEMENT: '00000000-0000-0033-ffff-ffff000000c9'
+}
+2026-08-11T01:48:58.183Z INFO webdriver: COMMAND isElementDisplayed("00000000-0000-0033-ffff-ffff000000c9")
+2026-08-11T01:48:58.183Z INFO webdriver: [GET] http://127.0.0.1:4723/session/02356b5d-d0b8-4472-9a93-3d707a7cd707/element/00000000-0000-0033-ffff-ffff000000c9/displayed
+2026-08-11T01:48:58.195Z INFO webdriver: RESULT true
+2026-08-11T01:48:58.195Z INFO webdriver: COMMAND findElement("xpath", "//*[@text="My Tasks"]")
+2026-08-11T01:48:58.195Z INFO webdriver: [POST] http://127.0.0.1:4723/session/02356b5d-d0b8-4472-9a93-3d707a7cd707/element
+2026-08-11T01:48:58.195Z INFO webdriver: DATA {"using":"xpath","value":"//*[@text=\"My Tasks\"]"}
+2026-08-11T01:48:58.242Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-0033-ffff-ffff00000011',
+  ELEMENT: '00000000-0000-0033-ffff-ffff00000011'
+}
+2026-08-11T01:48:58.244Z INFO webdriver: COMMAND isElementDisplayed("00000000-0000-0033-ffff-ffff00000011")
+2026-08-11T01:48:58.245Z INFO webdriver: [GET] http://127.0.0.1:4723/session/02356b5d-d0b8-4472-9a93-3d707a7cd707/element/00000000-0000-0033-ffff-ffff00000011/displayed
+2026-08-11T01:48:58.255Z INFO webdriver: RESULT true
+2026-08-11T01:48:58.255Z INFO webdriver: COMMAND findElement("xpath", "//*[@resource-id="org.tasks:id/title" and @text="Preparar apresentação para segunda"]/..")
+2026-08-11T01:48:58.256Z INFO webdriver: [POST] http://127.0.0.1:4723/session/02356b5d-d0b8-4472-9a93-3d707a7cd707/element
+2026-08-11T01:48:58.256Z INFO webdriver: DATA {"using":"xpath","value":"//*[@resource-id=\"org.tasks:id/title\" and @text=\"Preparar apresentação para segunda\"]/.."}
+2026-08-11T01:48:58.292Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-0033-ffff-ffff000000c9',
+  ELEMENT: '00000000-0000-0033-ffff-ffff000000c9'
+}
+2026-08-11T01:48:58.294Z INFO webdriver: COMMAND findElementFromElement("00000000-0000-0033-ffff-ffff000000c9", "xpath", "//*[@resource-id="org.tasks:id/title"]")
+2026-08-11T01:48:58.294Z INFO webdriver: [POST] http://127.0.0.1:4723/session/02356b5d-d0b8-4472-9a93-3d707a7cd707/element/00000000-0000-0033-ffff-ffff000000c9/element
+2026-08-11T01:48:58.294Z INFO webdriver: DATA {"using":"xpath","value":"//*[@resource-id=\"org.tasks:id/title\"]"}
+2026-08-11T01:48:58.312Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-0033-ffff-ffff000000cc',
+  ELEMENT: '00000000-0000-0033-ffff-ffff000000cc'
+}
+2026-08-11T01:48:58.315Z INFO webdriver: COMMAND isElementDisplayed("00000000-0000-0033-ffff-ffff000000cc")
+2026-08-11T01:48:58.315Z INFO webdriver: [GET] http://127.0.0.1:4723/session/02356b5d-d0b8-4472-9a93-3d707a7cd707/element/00000000-0000-0033-ffff-ffff000000cc/displayed
+2026-08-11T01:48:58.324Z INFO webdriver: RESULT true
+2026-08-11T01:48:58.324Z INFO webdriver: COMMAND findElement("xpath", "//*[@resource-id="org.tasks:id/title" and @text="Preparar apresentação para segunda"]/..")
+2026-08-11T01:48:58.325Z INFO webdriver: [POST] http://127.0.0.1:4723/session/02356b5d-d0b8-4472-9a93-3d707a7cd707/element
+2026-08-11T01:48:58.325Z INFO webdriver: DATA {"using":"xpath","value":"//*[@resource-id=\"org.tasks:id/title\" and @text=\"Preparar apresentação para segunda\"]/.."}
+2026-08-11T01:48:58.358Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-0033-ffff-ffff000000c9',
+  ELEMENT: '00000000-0000-0033-ffff-ffff000000c9'
+}
+2026-08-11T01:48:58.360Z INFO webdriver: COMMAND findElementFromElement("00000000-0000-0033-ffff-ffff000000c9", "xpath", "//*[@resource-id="org.tasks:id/completeBox"]")
+2026-08-11T01:48:58.360Z INFO webdriver: [POST] http://127.0.0.1:4723/session/02356b5d-d0b8-4472-9a93-3d707a7cd707/element/00000000-0000-0033-ffff-ffff000000c9/element
+2026-08-11T01:48:58.360Z INFO webdriver: DATA {"using":"xpath","value":"//*[@resource-id=\"org.tasks:id/completeBox\"]"}
+2026-08-11T01:48:58.377Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-0033-ffff-ffff000000ca',
+  ELEMENT: '00000000-0000-0033-ffff-ffff000000ca'
+}
+2026-08-11T01:48:58.379Z INFO webdriver: COMMAND isElementDisplayed("00000000-0000-0033-ffff-ffff000000ca")
+2026-08-11T01:48:58.379Z INFO webdriver: [GET] http://127.0.0.1:4723/session/02356b5d-d0b8-4472-9a93-3d707a7cd707/element/00000000-0000-0033-ffff-ffff000000ca/displayed
+2026-08-11T01:48:58.388Z INFO webdriver: RESULT true

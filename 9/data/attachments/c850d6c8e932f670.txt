@@ -1,0 +1,69 @@
+.........Console Logs.........
+
+2026-08-11T01:51:13.468Z INFO webdriver: COMMAND findElement("xpath", "//*[@resource-id="org.tasks:id/header" and @text="No due date"]/..")
+2026-08-11T01:51:13.469Z INFO webdriver: [POST] http://127.0.0.1:4723/session/f2317c3d-82c1-4631-9dbb-4ea004030ea1/element
+2026-08-11T01:51:13.469Z INFO webdriver: DATA {"using":"xpath","value":"//*[@resource-id=\"org.tasks:id/header\" and @text=\"No due date\"]/.."}
+2026-08-11T01:51:13.500Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-006d-ffff-ffff0000005b',
+  ELEMENT: '00000000-0000-006d-ffff-ffff0000005b'
+}
+2026-08-11T01:51:13.503Z INFO webdriver: COMMAND isElementDisplayed("00000000-0000-006d-ffff-ffff0000005b")
+2026-08-11T01:51:13.503Z INFO webdriver: [GET] http://127.0.0.1:4723/session/f2317c3d-82c1-4631-9dbb-4ea004030ea1/element/00000000-0000-006d-ffff-ffff0000005b/displayed
+2026-08-11T01:51:13.512Z INFO webdriver: RESULT true
+2026-08-11T01:51:13.512Z INFO webdriver: COMMAND isElementDisplayed("00000000-0000-006d-ffff-ffff0000005b")
+2026-08-11T01:51:13.513Z INFO webdriver: [GET] http://127.0.0.1:4723/session/f2317c3d-82c1-4631-9dbb-4ea004030ea1/element/00000000-0000-006d-ffff-ffff0000005b/displayed
+2026-08-11T01:51:13.521Z INFO webdriver: RESULT true
+2026-08-11T01:51:13.522Z INFO webdriver: COMMAND findElement("xpath", "//*[@resource-id="org.tasks:id/title" and @text="Pagar contas"]/..")
+2026-08-11T01:51:13.522Z INFO webdriver: [POST] http://127.0.0.1:4723/session/f2317c3d-82c1-4631-9dbb-4ea004030ea1/element
+2026-08-11T01:51:13.522Z INFO webdriver: DATA {"using":"xpath","value":"//*[@resource-id=\"org.tasks:id/title\" and @text=\"Pagar contas\"]/.."}
+2026-08-11T01:51:13.558Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-006d-ffff-ffff000000c8',
+  ELEMENT: '00000000-0000-006d-ffff-ffff000000c8'
+}
+2026-08-11T01:51:13.560Z INFO webdriver: COMMAND isElementDisplayed("00000000-0000-006d-ffff-ffff000000c8")
+2026-08-11T01:51:13.560Z INFO webdriver: [GET] http://127.0.0.1:4723/session/f2317c3d-82c1-4631-9dbb-4ea004030ea1/element/00000000-0000-006d-ffff-ffff000000c8/displayed
+2026-08-11T01:51:13.572Z INFO webdriver: RESULT true
+2026-08-11T01:51:13.572Z INFO webdriver: COMMAND findElement("xpath", "//*[@text="My Tasks"]")
+2026-08-11T01:51:13.572Z INFO webdriver: [POST] http://127.0.0.1:4723/session/f2317c3d-82c1-4631-9dbb-4ea004030ea1/element
+2026-08-11T01:51:13.572Z INFO webdriver: DATA {"using":"xpath","value":"//*[@text=\"My Tasks\"]"}
+2026-08-11T01:51:13.610Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-006d-ffff-ffff00000011',
+  ELEMENT: '00000000-0000-006d-ffff-ffff00000011'
+}
+2026-08-11T01:51:13.612Z INFO webdriver: COMMAND isElementDisplayed("00000000-0000-006d-ffff-ffff00000011")
+2026-08-11T01:51:13.612Z INFO webdriver: [GET] http://127.0.0.1:4723/session/f2317c3d-82c1-4631-9dbb-4ea004030ea1/element/00000000-0000-006d-ffff-ffff00000011/displayed
+2026-08-11T01:51:13.623Z INFO webdriver: RESULT true
+2026-08-11T01:51:13.623Z INFO webdriver: COMMAND findElement("xpath", "//*[@resource-id="org.tasks:id/title" and @text="Pagar contas"]/..")
+2026-08-11T01:51:13.623Z INFO webdriver: [POST] http://127.0.0.1:4723/session/f2317c3d-82c1-4631-9dbb-4ea004030ea1/element
+2026-08-11T01:51:13.623Z INFO webdriver: DATA {"using":"xpath","value":"//*[@resource-id=\"org.tasks:id/title\" and @text=\"Pagar contas\"]/.."}
+2026-08-11T01:51:13.666Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-006d-ffff-ffff000000c8',
+  ELEMENT: '00000000-0000-006d-ffff-ffff000000c8'
+}
+2026-08-11T01:51:13.668Z INFO webdriver: COMMAND findElementFromElement("00000000-0000-006d-ffff-ffff000000c8", "xpath", "//*[@resource-id="org.tasks:id/title"]")
+2026-08-11T01:51:13.669Z INFO webdriver: [POST] http://127.0.0.1:4723/session/f2317c3d-82c1-4631-9dbb-4ea004030ea1/element/00000000-0000-006d-ffff-ffff000000c8/element
+2026-08-11T01:51:13.669Z INFO webdriver: DATA {"using":"xpath","value":"//*[@resource-id=\"org.tasks:id/title\"]"}
+2026-08-11T01:51:13.687Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-006d-ffff-ffff000000cb',
+  ELEMENT: '00000000-0000-006d-ffff-ffff000000cb'
+}
+2026-08-11T01:51:13.689Z INFO webdriver: COMMAND isElementDisplayed("00000000-0000-006d-ffff-ffff000000cb")
+2026-08-11T01:51:13.689Z INFO webdriver: [GET] http://127.0.0.1:4723/session/f2317c3d-82c1-4631-9dbb-4ea004030ea1/element/00000000-0000-006d-ffff-ffff000000cb/displayed
+2026-08-11T01:51:13.698Z INFO webdriver: RESULT true
+2026-08-11T01:51:13.698Z INFO webdriver: COMMAND findElement("xpath", "//*[@resource-id="org.tasks:id/title" and @text="Pagar contas"]/..")
+2026-08-11T01:51:13.699Z INFO webdriver: [POST] http://127.0.0.1:4723/session/f2317c3d-82c1-4631-9dbb-4ea004030ea1/element
+2026-08-11T01:51:13.699Z INFO webdriver: DATA {"using":"xpath","value":"//*[@resource-id=\"org.tasks:id/title\" and @text=\"Pagar contas\"]/.."}
+2026-08-11T01:51:13.740Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-006d-ffff-ffff000000c8',
+  ELEMENT: '00000000-0000-006d-ffff-ffff000000c8'
+}
+2026-08-11T01:51:13.742Z INFO webdriver: COMMAND findElementFromElement("00000000-0000-006d-ffff-ffff000000c8", "xpath", "//*[@resource-id="org.tasks:id/completeBox"]")
+2026-08-11T01:51:13.742Z INFO webdriver: [POST] http://127.0.0.1:4723/session/f2317c3d-82c1-4631-9dbb-4ea004030ea1/element/00000000-0000-006d-ffff-ffff000000c8/element
+2026-08-11T01:51:13.742Z INFO webdriver: DATA {"using":"xpath","value":"//*[@resource-id=\"org.tasks:id/completeBox\"]"}
+2026-08-11T01:51:13.762Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-006d-ffff-ffff000000c9',
+  ELEMENT: '00000000-0000-006d-ffff-ffff000000c9'
+}
+2026-08-11T01:51:13.764Z INFO webdriver: COMMAND isElementDisplayed("00000000-0000-006d-ffff-ffff000000c9")
+2026-08-11T01:51:13.764Z INFO webdriver: [GET] http://127.0.0.1:4723/session/f2317c3d-82c1-4631-9dbb-4ea004030ea1/element/00000000-0000-006d-ffff-ffff000000c9/displayed
+2026-08-11T01:51:13.773Z INFO webdriver: RESULT true

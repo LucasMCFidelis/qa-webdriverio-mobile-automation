@@ -1,0 +1,28 @@
+.........Console Logs.........
+
+2026-08-11T01:50:56.345Z INFO webdriver: COMMAND findElement("xpath", "//android.widget.EditText[@text="Lavar o carro"]")
+2026-08-11T01:50:56.346Z INFO webdriver: [POST] http://127.0.0.1:4723/session/f2317c3d-82c1-4631-9dbb-4ea004030ea1/element
+2026-08-11T01:50:56.346Z INFO webdriver: DATA {"using":"xpath","value":"//android.widget.EditText[@text=\"Lavar o carro\"]"}
+2026-08-11T01:50:56.422Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-006d-ffff-ffff0000006f',
+  ELEMENT: '00000000-0000-006d-ffff-ffff0000006f'
+}
+2026-08-11T01:50:56.424Z INFO webdriver: COMMAND isElementDisplayed("00000000-0000-006d-ffff-ffff0000006f")
+2026-08-11T01:50:56.424Z INFO webdriver: [GET] http://127.0.0.1:4723/session/f2317c3d-82c1-4631-9dbb-4ea004030ea1/element/00000000-0000-006d-ffff-ffff0000006f/displayed
+2026-08-11T01:50:56.433Z INFO webdriver: RESULT true
+2026-08-11T01:50:56.433Z INFO webdriver: COMMAND elementClick("00000000-0000-006d-ffff-ffff0000006f")
+2026-08-11T01:50:56.433Z INFO webdriver: [POST] http://127.0.0.1:4723/session/f2317c3d-82c1-4631-9dbb-4ea004030ea1/element/00000000-0000-006d-ffff-ffff0000006f/click
+2026-08-11T01:50:56.433Z INFO webdriver: DATA {}
+2026-08-11T01:50:56.485Z INFO webdriver: RESULT null
+2026-08-11T01:50:56.485Z INFO webdriver: COMMAND elementClear("00000000-0000-006d-ffff-ffff0000006f")
+2026-08-11T01:50:56.486Z INFO webdriver: [POST] http://127.0.0.1:4723/session/f2317c3d-82c1-4631-9dbb-4ea004030ea1/element/00000000-0000-006d-ffff-ffff0000006f/clear
+2026-08-11T01:50:56.486Z INFO webdriver: DATA {}
+2026-08-11T01:50:57.353Z INFO webdriver: RESULT null
+2026-08-11T01:50:57.354Z INFO webdriver: COMMAND elementClear("00000000-0000-006d-ffff-ffff0000006f")
+2026-08-11T01:50:57.354Z INFO webdriver: [POST] http://127.0.0.1:4723/session/f2317c3d-82c1-4631-9dbb-4ea004030ea1/element/00000000-0000-006d-ffff-ffff0000006f/clear
+2026-08-11T01:50:57.354Z INFO webdriver: DATA {}
+2026-08-11T01:50:57.983Z INFO webdriver: RESULT null
+2026-08-11T01:50:57.983Z INFO webdriver: COMMAND elementSendKeys("00000000-0000-006d-ffff-ffff0000006f", "Lavar o carro e aspirar o interior")
+2026-08-11T01:50:57.983Z INFO webdriver: [POST] http://127.0.0.1:4723/session/f2317c3d-82c1-4631-9dbb-4ea004030ea1/element/00000000-0000-006d-ffff-ffff0000006f/value
+2026-08-11T01:50:57.983Z INFO webdriver: DATA {"text":"Lavar o carro e aspirar o interior"}
+2026-08-11T01:50:59.247Z INFO webdriver: RESULT null

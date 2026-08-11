@@ -1,0 +1,55 @@
+.........Console Logs.........
+
+2026-08-11T01:47:17.571Z INFO webdriver: COMMAND findElement("xpath", "//*[@resource-id="org.tasks:id/header" and @text="No due date"]/..")
+2026-08-11T01:47:17.571Z INFO webdriver: [POST] http://127.0.0.1:4723/session/0495ffcf-1d8c-4cba-af7a-54668ee5fdb9/element
+2026-08-11T01:47:17.572Z INFO webdriver: DATA {"using":"xpath","value":"//*[@resource-id=\"org.tasks:id/header\" and @text=\"No due date\"]/.."}
+2026-08-11T01:47:17.655Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-0013-ffff-ffff0000005b',
+  ELEMENT: '00000000-0000-0013-ffff-ffff0000005b'
+}
+2026-08-11T01:47:17.659Z INFO webdriver: COMMAND isElementDisplayed("00000000-0000-0013-ffff-ffff0000005b")
+2026-08-11T01:47:17.659Z INFO webdriver: [GET] http://127.0.0.1:4723/session/0495ffcf-1d8c-4cba-af7a-54668ee5fdb9/element/00000000-0000-0013-ffff-ffff0000005b/displayed
+2026-08-11T01:47:17.674Z INFO webdriver: RESULT true
+2026-08-11T01:47:17.674Z INFO webdriver: COMMAND isElementDisplayed("00000000-0000-0013-ffff-ffff0000005b")
+2026-08-11T01:47:17.674Z INFO webdriver: [GET] http://127.0.0.1:4723/session/0495ffcf-1d8c-4cba-af7a-54668ee5fdb9/element/00000000-0000-0013-ffff-ffff0000005b/displayed
+2026-08-11T01:47:17.684Z INFO webdriver: RESULT true
+2026-08-11T01:47:17.684Z INFO webdriver: COMMAND findElement("xpath", "//*[@resource-id="org.tasks:id/title" and @text="Comprar mantimentos"]/..")
+2026-08-11T01:47:17.684Z INFO webdriver: [POST] http://127.0.0.1:4723/session/0495ffcf-1d8c-4cba-af7a-54668ee5fdb9/element
+2026-08-11T01:47:17.685Z INFO webdriver: DATA {"using":"xpath","value":"//*[@resource-id=\"org.tasks:id/title\" and @text=\"Comprar mantimentos\"]/.."}
+2026-08-11T01:47:17.785Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-0013-ffff-ffff0000005f',
+  ELEMENT: '00000000-0000-0013-ffff-ffff0000005f'
+}
+2026-08-11T01:47:17.790Z INFO webdriver: COMMAND isElementDisplayed("00000000-0000-0013-ffff-ffff0000005f")
+2026-08-11T01:47:17.790Z INFO webdriver: [GET] http://127.0.0.1:4723/session/0495ffcf-1d8c-4cba-af7a-54668ee5fdb9/element/00000000-0000-0013-ffff-ffff0000005f/displayed
+2026-08-11T01:47:17.806Z INFO webdriver: RESULT true
+2026-08-11T01:47:17.807Z INFO webdriver: COMMAND elementClick("00000000-0000-0013-ffff-ffff0000005b")
+2026-08-11T01:47:17.807Z INFO webdriver: [POST] http://127.0.0.1:4723/session/0495ffcf-1d8c-4cba-af7a-54668ee5fdb9/element/00000000-0000-0013-ffff-ffff0000005b/click
+2026-08-11T01:47:17.807Z INFO webdriver: DATA {}
+2026-08-11T01:47:18.726Z INFO webdriver: RESULT null
+2026-08-11T01:47:18.727Z INFO webdriver: COMMAND findElement("xpath", "//*[@resource-id="org.tasks:id/title" and @text="Comprar mantimentos"]/..")
+2026-08-11T01:47:18.728Z INFO webdriver: [POST] http://127.0.0.1:4723/session/0495ffcf-1d8c-4cba-af7a-54668ee5fdb9/element
+2026-08-11T01:47:18.728Z INFO webdriver: DATA {"using":"xpath","value":"//*[@resource-id=\"org.tasks:id/title\" and @text=\"Comprar mantimentos\"]/.."}
+2026-08-11T01:47:18.823Z INFO webdriver: RESULT {
+  error: 'no such element',
+  message: 'An element could not be located on the page using the given search parameters.',
+  stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+    '    at AndroidUiautomator2Driver.findElOrEls (file:///home/runner/work/qa-webdriverio-mobile-automation/qa-webdriverio-mobile-automation/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/build/lib/commands/find.js:54:15)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n' +
+    '    at async AndroidUiautomator2Driver.findElOrElsWithProcessing (/home/runner/work/qa-webdriverio-mobile-automation/qa-webdriverio-mobile-automation/node_modules/@appium/base-driver/build/lib/basedriver/commands/find.js:12:16)\n' +
+    '    at async AndroidUiautomator2Driver.findElement (/home/runner/work/qa-webdriverio-mobile-automation/qa-webdriverio-mobile-automation/node_modules/@appium/base-driver/build/lib/basedriver/commands/find.js:28:16)\n' +
+    '    at async runCommandPromise (/home/runner/work/qa-webdriverio-mobile-automation/qa-webdriverio-mobile-automation/node_modules/@appium/base-driver/build/lib/basedriver/driver.js:119:24)'
+}
+2026-08-11T01:47:18.829Z INFO webdriver: COMMAND findElement("xpath", "//*[@resource-id="org.tasks:id/title" and @text="Comprar mantimentos"]/..")
+2026-08-11T01:47:18.829Z INFO webdriver: [POST] http://127.0.0.1:4723/session/0495ffcf-1d8c-4cba-af7a-54668ee5fdb9/element
+2026-08-11T01:47:18.829Z INFO webdriver: DATA {"using":"xpath","value":"//*[@resource-id=\"org.tasks:id/title\" and @text=\"Comprar mantimentos\"]/.."}
+2026-08-11T01:47:18.905Z INFO webdriver: RESULT {
+  error: 'no such element',
+  message: 'An element could not be located on the page using the given search parameters.',
+  stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+    '    at AndroidUiautomator2Driver.findElOrEls (file:///home/runner/work/qa-webdriverio-mobile-automation/qa-webdriverio-mobile-automation/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/build/lib/commands/find.js:54:15)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n' +
+    '    at async AndroidUiautomator2Driver.findElOrElsWithProcessing (/home/runner/work/qa-webdriverio-mobile-automation/qa-webdriverio-mobile-automation/node_modules/@appium/base-driver/build/lib/basedriver/commands/find.js:12:16)\n' +
+    '    at async AndroidUiautomator2Driver.findElement (/home/runner/work/qa-webdriverio-mobile-automation/qa-webdriverio-mobile-automation/node_modules/@appium/base-driver/build/lib/basedriver/commands/find.js:28:16)\n' +
+    '    at async runCommandPromise (/home/runner/work/qa-webdriverio-mobile-automation/qa-webdriverio-mobile-automation/node_modules/@appium/base-driver/build/lib/basedriver/driver.js:119:24)'
+}

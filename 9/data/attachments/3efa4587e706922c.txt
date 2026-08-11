@@ -1,0 +1,69 @@
+.........Console Logs.........
+
+2026-08-11T01:51:01.005Z INFO webdriver: COMMAND findElement("xpath", "//*[@resource-id="org.tasks:id/header" and @text="No due date"]/..")
+2026-08-11T01:51:01.006Z INFO webdriver: [POST] http://127.0.0.1:4723/session/f2317c3d-82c1-4631-9dbb-4ea004030ea1/element
+2026-08-11T01:51:01.006Z INFO webdriver: DATA {"using":"xpath","value":"//*[@resource-id=\"org.tasks:id/header\" and @text=\"No due date\"]/.."}
+2026-08-11T01:51:01.059Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-006d-ffff-ffff0000005b',
+  ELEMENT: '00000000-0000-006d-ffff-ffff0000005b'
+}
+2026-08-11T01:51:01.062Z INFO webdriver: COMMAND isElementDisplayed("00000000-0000-006d-ffff-ffff0000005b")
+2026-08-11T01:51:01.062Z INFO webdriver: [GET] http://127.0.0.1:4723/session/f2317c3d-82c1-4631-9dbb-4ea004030ea1/element/00000000-0000-006d-ffff-ffff0000005b/displayed
+2026-08-11T01:51:01.071Z INFO webdriver: RESULT true
+2026-08-11T01:51:01.071Z INFO webdriver: COMMAND isElementDisplayed("00000000-0000-006d-ffff-ffff0000005b")
+2026-08-11T01:51:01.071Z INFO webdriver: [GET] http://127.0.0.1:4723/session/f2317c3d-82c1-4631-9dbb-4ea004030ea1/element/00000000-0000-006d-ffff-ffff0000005b/displayed
+2026-08-11T01:51:01.080Z INFO webdriver: RESULT true
+2026-08-11T01:51:01.080Z INFO webdriver: COMMAND findElement("xpath", "//*[@resource-id="org.tasks:id/title" and @text="Lavar o carro e aspirar o interior"]/..")
+2026-08-11T01:51:01.080Z INFO webdriver: [POST] http://127.0.0.1:4723/session/f2317c3d-82c1-4631-9dbb-4ea004030ea1/element
+2026-08-11T01:51:01.080Z INFO webdriver: DATA {"using":"xpath","value":"//*[@resource-id=\"org.tasks:id/title\" and @text=\"Lavar o carro e aspirar o interior\"]/.."}
+2026-08-11T01:51:01.120Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-006d-ffff-ffff0000005f',
+  ELEMENT: '00000000-0000-006d-ffff-ffff0000005f'
+}
+2026-08-11T01:51:01.123Z INFO webdriver: COMMAND isElementDisplayed("00000000-0000-006d-ffff-ffff0000005f")
+2026-08-11T01:51:01.123Z INFO webdriver: [GET] http://127.0.0.1:4723/session/f2317c3d-82c1-4631-9dbb-4ea004030ea1/element/00000000-0000-006d-ffff-ffff0000005f/displayed
+2026-08-11T01:51:01.131Z INFO webdriver: RESULT true
+2026-08-11T01:51:01.132Z INFO webdriver: COMMAND findElement("xpath", "//*[@text="My Tasks"]")
+2026-08-11T01:51:01.132Z INFO webdriver: [POST] http://127.0.0.1:4723/session/f2317c3d-82c1-4631-9dbb-4ea004030ea1/element
+2026-08-11T01:51:01.132Z INFO webdriver: DATA {"using":"xpath","value":"//*[@text=\"My Tasks\"]"}
+2026-08-11T01:51:01.166Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-006d-ffff-ffff00000011',
+  ELEMENT: '00000000-0000-006d-ffff-ffff00000011'
+}
+2026-08-11T01:51:01.168Z INFO webdriver: COMMAND isElementDisplayed("00000000-0000-006d-ffff-ffff00000011")
+2026-08-11T01:51:01.168Z INFO webdriver: [GET] http://127.0.0.1:4723/session/f2317c3d-82c1-4631-9dbb-4ea004030ea1/element/00000000-0000-006d-ffff-ffff00000011/displayed
+2026-08-11T01:51:01.176Z INFO webdriver: RESULT true
+2026-08-11T01:51:01.177Z INFO webdriver: COMMAND findElement("xpath", "//*[@resource-id="org.tasks:id/title" and @text="Lavar o carro e aspirar o interior"]/..")
+2026-08-11T01:51:01.177Z INFO webdriver: [POST] http://127.0.0.1:4723/session/f2317c3d-82c1-4631-9dbb-4ea004030ea1/element
+2026-08-11T01:51:01.177Z INFO webdriver: DATA {"using":"xpath","value":"//*[@resource-id=\"org.tasks:id/title\" and @text=\"Lavar o carro e aspirar o interior\"]/.."}
+2026-08-11T01:51:01.219Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-006d-ffff-ffff0000005f',
+  ELEMENT: '00000000-0000-006d-ffff-ffff0000005f'
+}
+2026-08-11T01:51:01.221Z INFO webdriver: COMMAND findElementFromElement("00000000-0000-006d-ffff-ffff0000005f", "xpath", "//*[@resource-id="org.tasks:id/title"]")
+2026-08-11T01:51:01.222Z INFO webdriver: [POST] http://127.0.0.1:4723/session/f2317c3d-82c1-4631-9dbb-4ea004030ea1/element/00000000-0000-006d-ffff-ffff0000005f/element
+2026-08-11T01:51:01.222Z INFO webdriver: DATA {"using":"xpath","value":"//*[@resource-id=\"org.tasks:id/title\"]"}
+2026-08-11T01:51:01.241Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-006d-ffff-ffff00000062',
+  ELEMENT: '00000000-0000-006d-ffff-ffff00000062'
+}
+2026-08-11T01:51:01.243Z INFO webdriver: COMMAND isElementDisplayed("00000000-0000-006d-ffff-ffff00000062")
+2026-08-11T01:51:01.243Z INFO webdriver: [GET] http://127.0.0.1:4723/session/f2317c3d-82c1-4631-9dbb-4ea004030ea1/element/00000000-0000-006d-ffff-ffff00000062/displayed
+2026-08-11T01:51:01.251Z INFO webdriver: RESULT true
+2026-08-11T01:51:01.252Z INFO webdriver: COMMAND findElement("xpath", "//*[@resource-id="org.tasks:id/title" and @text="Lavar o carro e aspirar o interior"]/..")
+2026-08-11T01:51:01.252Z INFO webdriver: [POST] http://127.0.0.1:4723/session/f2317c3d-82c1-4631-9dbb-4ea004030ea1/element
+2026-08-11T01:51:01.252Z INFO webdriver: DATA {"using":"xpath","value":"//*[@resource-id=\"org.tasks:id/title\" and @text=\"Lavar o carro e aspirar o interior\"]/.."}
+2026-08-11T01:51:01.290Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-006d-ffff-ffff0000005f',
+  ELEMENT: '00000000-0000-006d-ffff-ffff0000005f'
+}
+2026-08-11T01:51:01.291Z INFO webdriver: COMMAND findElementFromElement("00000000-0000-006d-ffff-ffff0000005f", "xpath", "//*[@resource-id="org.tasks:id/completeBox"]")
+2026-08-11T01:51:01.292Z INFO webdriver: [POST] http://127.0.0.1:4723/session/f2317c3d-82c1-4631-9dbb-4ea004030ea1/element/00000000-0000-006d-ffff-ffff0000005f/element
+2026-08-11T01:51:01.292Z INFO webdriver: DATA {"using":"xpath","value":"//*[@resource-id=\"org.tasks:id/completeBox\"]"}
+2026-08-11T01:51:01.309Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-006d-ffff-ffff00000060',
+  ELEMENT: '00000000-0000-006d-ffff-ffff00000060'
+}
+2026-08-11T01:51:01.311Z INFO webdriver: COMMAND isElementDisplayed("00000000-0000-006d-ffff-ffff00000060")
+2026-08-11T01:51:01.311Z INFO webdriver: [GET] http://127.0.0.1:4723/session/f2317c3d-82c1-4631-9dbb-4ea004030ea1/element/00000000-0000-006d-ffff-ffff00000060/displayed
+2026-08-11T01:51:01.320Z INFO webdriver: RESULT true

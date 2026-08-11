@@ -1,0 +1,12 @@
+.........Console Logs.........
+
+2026-08-11T01:50:33.881Z INFO webdriver: COMMAND findElement("xpath", "//*[@text="There are no tasks here."]")
+2026-08-11T01:50:33.881Z INFO webdriver: [POST] http://127.0.0.1:4723/session/679050b1-202c-482b-b20a-bff80225ee07/element
+2026-08-11T01:50:33.881Z INFO webdriver: DATA {"using":"xpath","value":"//*[@text=\"There are no tasks here.\"]"}
+2026-08-11T01:50:33.919Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-0061-ffff-ffff0000001f',
+  ELEMENT: '00000000-0000-0061-ffff-ffff0000001f'
+}
+2026-08-11T01:50:33.922Z INFO webdriver: COMMAND isElementDisplayed("00000000-0000-0061-ffff-ffff0000001f")
+2026-08-11T01:50:33.922Z INFO webdriver: [GET] http://127.0.0.1:4723/session/679050b1-202c-482b-b20a-bff80225ee07/element/00000000-0000-0061-ffff-ffff0000001f/displayed
+2026-08-11T01:50:33.932Z INFO webdriver: RESULT true

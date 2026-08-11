@@ -1,0 +1,6 @@
+.........Console Logs.........
+
+2026-08-11T01:50:01.342Z INFO webdriver: COMMAND activateApp("org.tasks")
+2026-08-11T01:50:01.342Z INFO webdriver: [POST] http://127.0.0.1:4723/session/d836b8ba-9676-40d2-be45-55a05b6d04fd/appium/device/activate_app
+2026-08-11T01:50:01.342Z INFO webdriver: DATA {"appId":"org.tasks"}
+2026-08-11T01:50:01.412Z INFO webdriver: RESULT null
