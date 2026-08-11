@@ -112,6 +112,14 @@ jobs:
     if: always()
     runs-on: ubuntu-latest
     steps:
+      - name: Get Allure history
+        uses: actions/checkout@v4
+        if: always()
+        continue-on-error: true
+        with:
+          ref: gh-pages
+          path: gh-pages
+          
       - name: Baixar allure-results
         uses: actions/download-artifact@v4
         with:
@@ -119,9 +127,11 @@ jobs:
           path: allure-results
  
       - name: Gerar e publicar relatório com histórico
-        uses: simple-elf/allure-report-action@v1.9
+        uses: simple-elf/allure-report-action@v1.15
         with:
           allure_results: allure-results
+          gh_pages: gh-pages
+          allure_report: allure-report
           allure_history: allure-history
           keep_reports: 20
  
