@@ -1,0 +1,69 @@
+.........Console Logs.........
+
+2026-08-14T21:26:08.835Z INFO webdriver: COMMAND findElement("xpath", "//*[@resource-id="org.tasks:id/header" and @text="No due date"]/..")
+2026-08-14T21:26:08.835Z INFO webdriver: [POST] http://127.0.0.1:4723/session/717235be-575a-43ef-ba37-b89b7d412f95/element
+2026-08-14T21:26:08.835Z INFO webdriver: DATA {"using":"xpath","value":"//*[@resource-id=\"org.tasks:id/header\" and @text=\"No due date\"]/.."}
+2026-08-14T21:26:08.895Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-003f-ffff-ffff00000058',
+  ELEMENT: '00000000-0000-003f-ffff-ffff00000058'
+}
+2026-08-14T21:26:08.900Z INFO webdriver: COMMAND isElementDisplayed("00000000-0000-003f-ffff-ffff00000058")
+2026-08-14T21:26:08.901Z INFO webdriver: [GET] http://127.0.0.1:4723/session/717235be-575a-43ef-ba37-b89b7d412f95/element/00000000-0000-003f-ffff-ffff00000058/displayed
+2026-08-14T21:26:09.469Z INFO webdriver: RESULT true
+2026-08-14T21:26:09.469Z INFO webdriver: COMMAND isElementDisplayed("00000000-0000-003f-ffff-ffff00000058")
+2026-08-14T21:26:09.469Z INFO webdriver: [GET] http://127.0.0.1:4723/session/717235be-575a-43ef-ba37-b89b7d412f95/element/00000000-0000-003f-ffff-ffff00000058/displayed
+2026-08-14T21:26:09.516Z INFO webdriver: RESULT true
+2026-08-14T21:26:09.516Z INFO webdriver: COMMAND findElement("xpath", "//*[@resource-id="org.tasks:id/title" and @text="Comprar mantimentos"]/..")
+2026-08-14T21:26:09.517Z INFO webdriver: [POST] http://127.0.0.1:4723/session/717235be-575a-43ef-ba37-b89b7d412f95/element
+2026-08-14T21:26:09.517Z INFO webdriver: DATA {"using":"xpath","value":"//*[@resource-id=\"org.tasks:id/title\" and @text=\"Comprar mantimentos\"]/.."}
+2026-08-14T21:26:09.668Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-003f-ffff-ffff0000005c',
+  ELEMENT: '00000000-0000-003f-ffff-ffff0000005c'
+}
+2026-08-14T21:26:09.673Z INFO webdriver: COMMAND isElementDisplayed("00000000-0000-003f-ffff-ffff0000005c")
+2026-08-14T21:26:09.674Z INFO webdriver: [GET] http://127.0.0.1:4723/session/717235be-575a-43ef-ba37-b89b7d412f95/element/00000000-0000-003f-ffff-ffff0000005c/displayed
+2026-08-14T21:26:09.694Z INFO webdriver: RESULT true
+2026-08-14T21:26:09.695Z INFO webdriver: COMMAND findElement("xpath", "//*[@text="My Tasks"]")
+2026-08-14T21:26:09.696Z INFO webdriver: [POST] http://127.0.0.1:4723/session/717235be-575a-43ef-ba37-b89b7d412f95/element
+2026-08-14T21:26:09.696Z INFO webdriver: DATA {"using":"xpath","value":"//*[@text=\"My Tasks\"]"}
+2026-08-14T21:26:09.855Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-003f-ffff-ffff00000011',
+  ELEMENT: '00000000-0000-003f-ffff-ffff00000011'
+}
+2026-08-14T21:26:09.859Z INFO webdriver: COMMAND isElementDisplayed("00000000-0000-003f-ffff-ffff00000011")
+2026-08-14T21:26:09.860Z INFO webdriver: [GET] http://127.0.0.1:4723/session/717235be-575a-43ef-ba37-b89b7d412f95/element/00000000-0000-003f-ffff-ffff00000011/displayed
+2026-08-14T21:26:09.888Z INFO webdriver: RESULT true
+2026-08-14T21:26:09.888Z INFO webdriver: COMMAND findElement("xpath", "//*[@resource-id="org.tasks:id/title" and @text="Comprar mantimentos"]/..")
+2026-08-14T21:26:09.889Z INFO webdriver: [POST] http://127.0.0.1:4723/session/717235be-575a-43ef-ba37-b89b7d412f95/element
+2026-08-14T21:26:09.889Z INFO webdriver: DATA {"using":"xpath","value":"//*[@resource-id=\"org.tasks:id/title\" and @text=\"Comprar mantimentos\"]/.."}
+2026-08-14T21:26:10.004Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-003f-ffff-ffff0000005c',
+  ELEMENT: '00000000-0000-003f-ffff-ffff0000005c'
+}
+2026-08-14T21:26:10.010Z INFO webdriver: COMMAND findElementFromElement("00000000-0000-003f-ffff-ffff0000005c", "xpath", "//*[@resource-id="org.tasks:id/title"]")
+2026-08-14T21:26:10.010Z INFO webdriver: [POST] http://127.0.0.1:4723/session/717235be-575a-43ef-ba37-b89b7d412f95/element/00000000-0000-003f-ffff-ffff0000005c/element
+2026-08-14T21:26:10.010Z INFO webdriver: DATA {"using":"xpath","value":"//*[@resource-id=\"org.tasks:id/title\"]"}
+2026-08-14T21:26:10.061Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-003f-ffff-ffff0000005f',
+  ELEMENT: '00000000-0000-003f-ffff-ffff0000005f'
+}
+2026-08-14T21:26:10.066Z INFO webdriver: COMMAND isElementDisplayed("00000000-0000-003f-ffff-ffff0000005f")
+2026-08-14T21:26:10.066Z INFO webdriver: [GET] http://127.0.0.1:4723/session/717235be-575a-43ef-ba37-b89b7d412f95/element/00000000-0000-003f-ffff-ffff0000005f/displayed
+2026-08-14T21:26:10.091Z INFO webdriver: RESULT true
+2026-08-14T21:26:10.091Z INFO webdriver: COMMAND findElement("xpath", "//*[@resource-id="org.tasks:id/title" and @text="Comprar mantimentos"]/..")
+2026-08-14T21:26:10.091Z INFO webdriver: [POST] http://127.0.0.1:4723/session/717235be-575a-43ef-ba37-b89b7d412f95/element
+2026-08-14T21:26:10.092Z INFO webdriver: DATA {"using":"xpath","value":"//*[@resource-id=\"org.tasks:id/title\" and @text=\"Comprar mantimentos\"]/.."}
+2026-08-14T21:26:10.238Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-003f-ffff-ffff0000005c',
+  ELEMENT: '00000000-0000-003f-ffff-ffff0000005c'
+}
+2026-08-14T21:26:10.240Z INFO webdriver: COMMAND findElementFromElement("00000000-0000-003f-ffff-ffff0000005c", "xpath", "//*[@resource-id="org.tasks:id/completeBox"]")
+2026-08-14T21:26:10.241Z INFO webdriver: [POST] http://127.0.0.1:4723/session/717235be-575a-43ef-ba37-b89b7d412f95/element/00000000-0000-003f-ffff-ffff0000005c/element
+2026-08-14T21:26:10.241Z INFO webdriver: DATA {"using":"xpath","value":"//*[@resource-id=\"org.tasks:id/completeBox\"]"}
+2026-08-14T21:26:10.307Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-003f-ffff-ffff0000005d',
+  ELEMENT: '00000000-0000-003f-ffff-ffff0000005d'
+}
+2026-08-14T21:26:10.311Z INFO webdriver: COMMAND isElementDisplayed("00000000-0000-003f-ffff-ffff0000005d")
+2026-08-14T21:26:10.311Z INFO webdriver: [GET] http://127.0.0.1:4723/session/717235be-575a-43ef-ba37-b89b7d412f95/element/00000000-0000-003f-ffff-ffff0000005d/displayed
+2026-08-14T21:26:10.336Z INFO webdriver: RESULT true
