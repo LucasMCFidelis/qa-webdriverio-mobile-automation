@@ -1,5 +1,3 @@
-# language: pt
-
 Feature: Gerenciamento de estados das Tarefas
   Como usuário do Tasks.org
   Eu quero poder alterar os estados das tarefas
