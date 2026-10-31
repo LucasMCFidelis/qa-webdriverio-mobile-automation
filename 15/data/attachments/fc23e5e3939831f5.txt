@@ -1,0 +1,13 @@
+.........Console Logs.........
+
+2026-10-31T21:56:02.179Z INFO webdriver: COMMAND findElement("accessibility id", "Save")
+2026-10-31T21:56:02.180Z INFO webdriver: [POST] http://127.0.0.1:4723/session/fc1fff10-af80-4640-afd9-88e12d336d04/element
+2026-10-31T21:56:02.180Z INFO webdriver: DATA {"using":"accessibility id","value":"Save"}
+2026-10-31T21:56:02.322Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-0036-0000-03230000011c',
+  ELEMENT: '00000000-0000-0036-0000-03230000011c'
+}
+2026-10-31T21:56:02.324Z INFO webdriver: COMMAND elementClick("00000000-0000-0036-0000-03230000011c")
+2026-10-31T21:56:02.324Z INFO webdriver: [POST] http://127.0.0.1:4723/session/fc1fff10-af80-4640-afd9-88e12d336d04/element/00000000-0000-0036-0000-03230000011c/click
+2026-10-31T21:56:02.324Z INFO webdriver: DATA {}
+2026-10-31T21:56:03.824Z INFO webdriver: RESULT null

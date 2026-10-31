@@ -1,0 +1,12 @@
+.........Console Logs.........
+
+2026-10-31T21:57:16.717Z INFO webdriver: COMMAND findElement("xpath", "//android.widget.EditText[@text="Reunião de equipe"]")
+2026-10-31T21:57:16.717Z INFO webdriver: [POST] http://127.0.0.1:4723/session/16102411-6d29-4d7b-a621-f6b26b841c9a/element
+2026-10-31T21:57:16.717Z INFO webdriver: DATA {"using":"xpath","value":"//android.widget.EditText[@text=\"Reunião de equipe\"]"}
+2026-10-31T21:57:16.773Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-005a-ffff-ffff0000006c',
+  ELEMENT: '00000000-0000-005a-ffff-ffff0000006c'
+}
+2026-10-31T21:57:16.776Z INFO webdriver: COMMAND isElementDisplayed("00000000-0000-005a-ffff-ffff0000006c")
+2026-10-31T21:57:16.776Z INFO webdriver: [GET] http://127.0.0.1:4723/session/16102411-6d29-4d7b-a621-f6b26b841c9a/element/00000000-0000-005a-ffff-ffff0000006c/displayed
+2026-10-31T21:57:16.785Z INFO webdriver: RESULT true

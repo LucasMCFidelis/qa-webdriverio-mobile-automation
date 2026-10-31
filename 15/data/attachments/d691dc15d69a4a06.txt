@@ -1,0 +1,59 @@
+.........Console Logs.........
+
+2026-10-31T21:56:18.250Z INFO webdriver: COMMAND findElement("xpath", "//*[@text="Continue without sync"]")
+2026-10-31T21:56:18.250Z INFO webdriver: [POST] http://127.0.0.1:4723/session/1037752e-4850-425c-a96b-2371dda764c6/element
+2026-10-31T21:56:18.251Z INFO webdriver: DATA {"using":"xpath","value":"//*[@text=\"Continue without sync\"]"}
+2026-10-31T21:56:19.083Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-0041-0000-001f00000006',
+  ELEMENT: '00000000-0000-0041-0000-001f00000006'
+}
+2026-10-31T21:56:19.087Z INFO webdriver: COMMAND isElementDisplayed("00000000-0000-0041-0000-001f00000006")
+2026-10-31T21:56:19.088Z INFO webdriver: [GET] http://127.0.0.1:4723/session/1037752e-4850-425c-a96b-2371dda764c6/element/00000000-0000-0041-0000-001f00000006/displayed
+2026-10-31T21:56:19.652Z INFO webdriver: RESULT true
+2026-10-31T21:56:19.653Z INFO webdriver: COMMAND findElement("xpath", "//*[@text="My Tasks"]")
+2026-10-31T21:56:19.653Z INFO webdriver: [POST] http://127.0.0.1:4723/session/1037752e-4850-425c-a96b-2371dda764c6/element
+2026-10-31T21:56:19.653Z INFO webdriver: DATA {"using":"xpath","value":"//*[@text=\"My Tasks\"]"}
+2026-10-31T21:56:19.683Z INFO webdriver: RESULT {
+  error: 'no such element',
+  message: 'An element could not be located on the page using the given search parameters.',
+  stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+    '    at AndroidUiautomator2Driver.findElOrEls (file:///home/runner/work/qa-webdriverio-mobile-automation/qa-webdriverio-mobile-automation/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/build/lib/commands/find.js:54:15)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n' +
+    '    at async AndroidUiautomator2Driver.findElOrElsWithProcessing (/home/runner/work/qa-webdriverio-mobile-automation/qa-webdriverio-mobile-automation/node_modules/@appium/base-driver/build/lib/basedriver/commands/find.js:12:16)\n' +
+    '    at async AndroidUiautomator2Driver.findElement (/home/runner/work/qa-webdriverio-mobile-automation/qa-webdriverio-mobile-automation/node_modules/@appium/base-driver/build/lib/basedriver/commands/find.js:28:16)\n' +
+    '    at async runCommandPromise (/home/runner/work/qa-webdriverio-mobile-automation/qa-webdriverio-mobile-automation/node_modules/@appium/base-driver/build/lib/basedriver/driver.js:119:24)'
+}
+2026-10-31T21:56:19.687Z INFO webdriver: COMMAND findElement("xpath", "//*[@text="My Tasks"]")
+2026-10-31T21:56:19.688Z INFO webdriver: [POST] http://127.0.0.1:4723/session/1037752e-4850-425c-a96b-2371dda764c6/element
+2026-10-31T21:56:19.688Z INFO webdriver: DATA {"using":"xpath","value":"//*[@text=\"My Tasks\"]"}
+2026-10-31T21:56:19.713Z INFO webdriver: RESULT {
+  error: 'no such element',
+  message: 'An element could not be located on the page using the given search parameters.',
+  stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+    '    at AndroidUiautomator2Driver.findElOrEls (file:///home/runner/work/qa-webdriverio-mobile-automation/qa-webdriverio-mobile-automation/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/build/lib/commands/find.js:54:15)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n' +
+    '    at async AndroidUiautomator2Driver.findElOrElsWithProcessing (/home/runner/work/qa-webdriverio-mobile-automation/qa-webdriverio-mobile-automation/node_modules/@appium/base-driver/build/lib/basedriver/commands/find.js:12:16)\n' +
+    '    at async AndroidUiautomator2Driver.findElement (/home/runner/work/qa-webdriverio-mobile-automation/qa-webdriverio-mobile-automation/node_modules/@appium/base-driver/build/lib/basedriver/commands/find.js:28:16)\n' +
+    '    at async runCommandPromise (/home/runner/work/qa-webdriverio-mobile-automation/qa-webdriverio-mobile-automation/node_modules/@appium/base-driver/build/lib/basedriver/driver.js:119:24)'
+}
+2026-10-31T21:56:19.716Z INFO webdriver: COMMAND findElement("xpath", "//*[@text="Continue without sync"]")
+2026-10-31T21:56:19.716Z INFO webdriver: [POST] http://127.0.0.1:4723/session/1037752e-4850-425c-a96b-2371dda764c6/element
+2026-10-31T21:56:19.716Z INFO webdriver: DATA {"using":"xpath","value":"//*[@text=\"Continue without sync\"]"}
+2026-10-31T21:56:19.742Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-0041-0000-001f00000006',
+  ELEMENT: '00000000-0000-0041-0000-001f00000006'
+}
+2026-10-31T21:56:19.744Z INFO webdriver: COMMAND elementClick("00000000-0000-0041-0000-001f00000006")
+2026-10-31T21:56:19.745Z INFO webdriver: [POST] http://127.0.0.1:4723/session/1037752e-4850-425c-a96b-2371dda764c6/element/00000000-0000-0041-0000-001f00000006/click
+2026-10-31T21:56:19.745Z INFO webdriver: DATA {}
+2026-10-31T21:56:20.471Z INFO webdriver: RESULT null
+2026-10-31T21:56:20.471Z INFO webdriver: COMMAND findElement("xpath", "//*[@text="My Tasks"]")
+2026-10-31T21:56:20.472Z INFO webdriver: [POST] http://127.0.0.1:4723/session/1037752e-4850-425c-a96b-2371dda764c6/element
+2026-10-31T21:56:20.472Z INFO webdriver: DATA {"using":"xpath","value":"//*[@text=\"My Tasks\"]"}
+2026-10-31T21:56:20.501Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-0041-ffff-ffff00000011',
+  ELEMENT: '00000000-0000-0041-ffff-ffff00000011'
+}
+2026-10-31T21:56:20.504Z INFO webdriver: COMMAND isElementDisplayed("00000000-0000-0041-ffff-ffff00000011")
+2026-10-31T21:56:20.504Z INFO webdriver: [GET] http://127.0.0.1:4723/session/1037752e-4850-425c-a96b-2371dda764c6/element/00000000-0000-0041-ffff-ffff00000011/displayed
+2026-10-31T21:56:20.516Z INFO webdriver: RESULT true

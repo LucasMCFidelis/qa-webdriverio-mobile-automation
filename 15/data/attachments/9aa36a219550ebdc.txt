@@ -1,0 +1,69 @@
+.........Console Logs.........
+
+2026-10-31T21:57:26.850Z INFO webdriver: COMMAND findElement("xpath", "//*[@resource-id="org.tasks:id/header" and @text="No due date"]/..")
+2026-10-31T21:57:26.851Z INFO webdriver: [POST] http://127.0.0.1:4723/session/c4ba908f-5bbe-4a94-9ce6-63af4c992d8e/element
+2026-10-31T21:57:26.851Z INFO webdriver: DATA {"using":"xpath","value":"//*[@resource-id=\"org.tasks:id/header\" and @text=\"No due date\"]/.."}
+2026-10-31T21:57:26.907Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-0064-ffff-ffff00000058',
+  ELEMENT: '00000000-0000-0064-ffff-ffff00000058'
+}
+2026-10-31T21:57:26.909Z INFO webdriver: COMMAND isElementDisplayed("00000000-0000-0064-ffff-ffff00000058")
+2026-10-31T21:57:26.910Z INFO webdriver: [GET] http://127.0.0.1:4723/session/c4ba908f-5bbe-4a94-9ce6-63af4c992d8e/element/00000000-0000-0064-ffff-ffff00000058/displayed
+2026-10-31T21:57:27.470Z INFO webdriver: RESULT true
+2026-10-31T21:57:27.471Z INFO webdriver: COMMAND isElementDisplayed("00000000-0000-0064-ffff-ffff00000058")
+2026-10-31T21:57:27.471Z INFO webdriver: [GET] http://127.0.0.1:4723/session/c4ba908f-5bbe-4a94-9ce6-63af4c992d8e/element/00000000-0000-0064-ffff-ffff00000058/displayed
+2026-10-31T21:57:27.480Z INFO webdriver: RESULT true
+2026-10-31T21:57:27.481Z INFO webdriver: COMMAND findElement("xpath", "//*[@resource-id="org.tasks:id/title" and @text="Tarefa em tempo real"]/..")
+2026-10-31T21:57:27.481Z INFO webdriver: [POST] http://127.0.0.1:4723/session/c4ba908f-5bbe-4a94-9ce6-63af4c992d8e/element
+2026-10-31T21:57:27.481Z INFO webdriver: DATA {"using":"xpath","value":"//*[@resource-id=\"org.tasks:id/title\" and @text=\"Tarefa em tempo real\"]/.."}
+2026-10-31T21:57:27.508Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-0064-ffff-ffff0000005c',
+  ELEMENT: '00000000-0000-0064-ffff-ffff0000005c'
+}
+2026-10-31T21:57:27.510Z INFO webdriver: COMMAND isElementDisplayed("00000000-0000-0064-ffff-ffff0000005c")
+2026-10-31T21:57:27.510Z INFO webdriver: [GET] http://127.0.0.1:4723/session/c4ba908f-5bbe-4a94-9ce6-63af4c992d8e/element/00000000-0000-0064-ffff-ffff0000005c/displayed
+2026-10-31T21:57:27.520Z INFO webdriver: RESULT true
+2026-10-31T21:57:27.520Z INFO webdriver: COMMAND findElement("xpath", "//*[@text="My Tasks"]")
+2026-10-31T21:57:27.520Z INFO webdriver: [POST] http://127.0.0.1:4723/session/c4ba908f-5bbe-4a94-9ce6-63af4c992d8e/element
+2026-10-31T21:57:27.520Z INFO webdriver: DATA {"using":"xpath","value":"//*[@text=\"My Tasks\"]"}
+2026-10-31T21:57:27.550Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-0064-ffff-ffff00000011',
+  ELEMENT: '00000000-0000-0064-ffff-ffff00000011'
+}
+2026-10-31T21:57:27.552Z INFO webdriver: COMMAND isElementDisplayed("00000000-0000-0064-ffff-ffff00000011")
+2026-10-31T21:57:27.552Z INFO webdriver: [GET] http://127.0.0.1:4723/session/c4ba908f-5bbe-4a94-9ce6-63af4c992d8e/element/00000000-0000-0064-ffff-ffff00000011/displayed
+2026-10-31T21:57:27.561Z INFO webdriver: RESULT true
+2026-10-31T21:57:27.562Z INFO webdriver: COMMAND findElement("xpath", "//*[@resource-id="org.tasks:id/title" and @text="Tarefa em tempo real"]/..")
+2026-10-31T21:57:27.562Z INFO webdriver: [POST] http://127.0.0.1:4723/session/c4ba908f-5bbe-4a94-9ce6-63af4c992d8e/element
+2026-10-31T21:57:27.562Z INFO webdriver: DATA {"using":"xpath","value":"//*[@resource-id=\"org.tasks:id/title\" and @text=\"Tarefa em tempo real\"]/.."}
+2026-10-31T21:57:27.591Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-0064-ffff-ffff0000005c',
+  ELEMENT: '00000000-0000-0064-ffff-ffff0000005c'
+}
+2026-10-31T21:57:27.593Z INFO webdriver: COMMAND findElementFromElement("00000000-0000-0064-ffff-ffff0000005c", "xpath", "//*[@resource-id="org.tasks:id/title"]")
+2026-10-31T21:57:27.593Z INFO webdriver: [POST] http://127.0.0.1:4723/session/c4ba908f-5bbe-4a94-9ce6-63af4c992d8e/element/00000000-0000-0064-ffff-ffff0000005c/element
+2026-10-31T21:57:27.593Z INFO webdriver: DATA {"using":"xpath","value":"//*[@resource-id=\"org.tasks:id/title\"]"}
+2026-10-31T21:57:27.610Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-0064-ffff-ffff0000005f',
+  ELEMENT: '00000000-0000-0064-ffff-ffff0000005f'
+}
+2026-10-31T21:57:27.611Z INFO webdriver: COMMAND isElementDisplayed("00000000-0000-0064-ffff-ffff0000005f")
+2026-10-31T21:57:27.611Z INFO webdriver: [GET] http://127.0.0.1:4723/session/c4ba908f-5bbe-4a94-9ce6-63af4c992d8e/element/00000000-0000-0064-ffff-ffff0000005f/displayed
+2026-10-31T21:57:27.620Z INFO webdriver: RESULT true
+2026-10-31T21:57:27.621Z INFO webdriver: COMMAND findElement("xpath", "//*[@resource-id="org.tasks:id/title" and @text="Tarefa em tempo real"]/..")
+2026-10-31T21:57:27.621Z INFO webdriver: [POST] http://127.0.0.1:4723/session/c4ba908f-5bbe-4a94-9ce6-63af4c992d8e/element
+2026-10-31T21:57:27.621Z INFO webdriver: DATA {"using":"xpath","value":"//*[@resource-id=\"org.tasks:id/title\" and @text=\"Tarefa em tempo real\"]/.."}
+2026-10-31T21:57:27.654Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-0064-ffff-ffff0000005c',
+  ELEMENT: '00000000-0000-0064-ffff-ffff0000005c'
+}
+2026-10-31T21:57:27.655Z INFO webdriver: COMMAND findElementFromElement("00000000-0000-0064-ffff-ffff0000005c", "xpath", "//*[@resource-id="org.tasks:id/completeBox"]")
+2026-10-31T21:57:27.656Z INFO webdriver: [POST] http://127.0.0.1:4723/session/c4ba908f-5bbe-4a94-9ce6-63af4c992d8e/element/00000000-0000-0064-ffff-ffff0000005c/element
+2026-10-31T21:57:27.656Z INFO webdriver: DATA {"using":"xpath","value":"//*[@resource-id=\"org.tasks:id/completeBox\"]"}
+2026-10-31T21:57:27.671Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-0064-ffff-ffff0000005d',
+  ELEMENT: '00000000-0000-0064-ffff-ffff0000005d'
+}
+2026-10-31T21:57:27.673Z INFO webdriver: COMMAND isElementDisplayed("00000000-0000-0064-ffff-ffff0000005d")
+2026-10-31T21:57:27.673Z INFO webdriver: [GET] http://127.0.0.1:4723/session/c4ba908f-5bbe-4a94-9ce6-63af4c992d8e/element/00000000-0000-0064-ffff-ffff0000005d/displayed
+2026-10-31T21:57:27.681Z INFO webdriver: RESULT true

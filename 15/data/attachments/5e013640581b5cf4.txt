@@ -1,0 +1,41 @@
+.........Console Logs.........
+
+2026-10-31T21:55:59.452Z INFO webdriver: COMMAND hideKeyboard()
+2026-10-31T21:55:59.452Z INFO webdriver: [POST] http://127.0.0.1:4723/session/fc1fff10-af80-4640-afd9-88e12d336d04/appium/device/hide_keyboard
+2026-10-31T21:55:59.452Z INFO webdriver: DATA {}
+2026-10-31T21:55:59.837Z INFO webdriver: RESULT true
+2026-10-31T21:55:59.838Z INFO webdriver: COMMAND back()
+2026-10-31T21:55:59.838Z INFO webdriver: [POST] http://127.0.0.1:4723/session/fc1fff10-af80-4640-afd9-88e12d336d04/back
+2026-10-31T21:55:59.838Z INFO webdriver: DATA {}
+2026-10-31T21:56:00.490Z INFO webdriver: RESULT null
+2026-10-31T21:56:00.490Z INFO webdriver: COMMAND findElement("xpath", "//android.widget.Button[@text="Discard"]")
+2026-10-31T21:56:00.490Z INFO webdriver: [POST] http://127.0.0.1:4723/session/fc1fff10-af80-4640-afd9-88e12d336d04/element
+2026-10-31T21:56:00.490Z INFO webdriver: DATA {"using":"xpath","value":"//android.widget.Button[@text=\"Discard\"]"}
+2026-10-31T21:56:01.068Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-0037-ffff-ffff00000116',
+  ELEMENT: '00000000-0000-0037-ffff-ffff00000116'
+}
+2026-10-31T21:56:01.069Z INFO webdriver: COMMAND isElementDisplayed("00000000-0000-0037-ffff-ffff00000116")
+2026-10-31T21:56:01.069Z INFO webdriver: [GET] http://127.0.0.1:4723/session/fc1fff10-af80-4640-afd9-88e12d336d04/element/00000000-0000-0037-ffff-ffff00000116/displayed
+2026-10-31T21:56:01.079Z INFO webdriver: RESULT true
+2026-10-31T21:56:01.079Z INFO webdriver: COMMAND findElement("xpath", "//android.widget.Button[@text="Discard"]")
+2026-10-31T21:56:01.079Z INFO webdriver: [POST] http://127.0.0.1:4723/session/fc1fff10-af80-4640-afd9-88e12d336d04/element
+2026-10-31T21:56:01.079Z INFO webdriver: DATA {"using":"xpath","value":"//android.widget.Button[@text=\"Discard\"]"}
+2026-10-31T21:56:01.109Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-0037-ffff-ffff00000116',
+  ELEMENT: '00000000-0000-0037-ffff-ffff00000116'
+}
+2026-10-31T21:56:01.110Z INFO webdriver: COMMAND elementClick("00000000-0000-0037-ffff-ffff00000116")
+2026-10-31T21:56:01.110Z INFO webdriver: [POST] http://127.0.0.1:4723/session/fc1fff10-af80-4640-afd9-88e12d336d04/element/00000000-0000-0037-ffff-ffff00000116/click
+2026-10-31T21:56:01.110Z INFO webdriver: DATA {}
+2026-10-31T21:56:01.166Z INFO webdriver: RESULT null
+2026-10-31T21:56:01.169Z INFO webdriver: COMMAND findElement("xpath", "//*[@text="My Tasks"]")
+2026-10-31T21:56:01.169Z INFO webdriver: [POST] http://127.0.0.1:4723/session/fc1fff10-af80-4640-afd9-88e12d336d04/element
+2026-10-31T21:56:01.169Z INFO webdriver: DATA {"using":"xpath","value":"//*[@text=\"My Tasks\"]"}
+2026-10-31T21:56:01.858Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-0036-ffff-ffff00000011',
+  ELEMENT: '00000000-0000-0036-ffff-ffff00000011'
+}
+2026-10-31T21:56:01.860Z INFO webdriver: COMMAND isElementDisplayed("00000000-0000-0036-ffff-ffff00000011")
+2026-10-31T21:56:01.860Z INFO webdriver: [GET] http://127.0.0.1:4723/session/fc1fff10-af80-4640-afd9-88e12d336d04/element/00000000-0000-0036-ffff-ffff00000011/displayed
+2026-10-31T21:56:01.870Z INFO webdriver: RESULT true

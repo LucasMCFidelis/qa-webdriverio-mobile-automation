@@ -1,0 +1,60 @@
+.........Console Logs.........
+
+2026-10-31T21:55:36.196Z INFO webdriver: COMMAND findElement("accessibility id", "Create new task")
+2026-10-31T21:55:36.196Z INFO webdriver: [POST] http://127.0.0.1:4723/session/fc1fff10-af80-4640-afd9-88e12d336d04/element
+2026-10-31T21:55:36.196Z INFO webdriver: DATA {"using":"accessibility id","value":"Create new task"}
+2026-10-31T21:55:36.213Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-0036-ffff-ffff00000029',
+  ELEMENT: '00000000-0000-0036-ffff-ffff00000029'
+}
+2026-10-31T21:55:36.215Z INFO webdriver: COMMAND isElementDisplayed("00000000-0000-0036-ffff-ffff00000029")
+2026-10-31T21:55:36.215Z INFO webdriver: [GET] http://127.0.0.1:4723/session/fc1fff10-af80-4640-afd9-88e12d336d04/element/00000000-0000-0036-ffff-ffff00000029/displayed
+2026-10-31T21:55:36.226Z INFO webdriver: RESULT true
+2026-10-31T21:55:36.227Z INFO webdriver: COMMAND findElement("accessibility id", "Create new task")
+2026-10-31T21:55:36.227Z INFO webdriver: [POST] http://127.0.0.1:4723/session/fc1fff10-af80-4640-afd9-88e12d336d04/element
+2026-10-31T21:55:36.227Z INFO webdriver: DATA {"using":"accessibility id","value":"Create new task"}
+2026-10-31T21:55:36.247Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-0036-ffff-ffff00000029',
+  ELEMENT: '00000000-0000-0036-ffff-ffff00000029'
+}
+2026-10-31T21:55:36.249Z INFO webdriver: COMMAND elementClick("00000000-0000-0036-ffff-ffff00000029")
+2026-10-31T21:55:36.249Z INFO webdriver: [POST] http://127.0.0.1:4723/session/fc1fff10-af80-4640-afd9-88e12d336d04/element/00000000-0000-0036-ffff-ffff00000029/click
+2026-10-31T21:55:36.249Z INFO webdriver: DATA {}
+2026-10-31T21:55:36.309Z INFO webdriver: RESULT null
+2026-10-31T21:55:36.310Z INFO webdriver: COMMAND findElement("xpath", "//android.widget.EditText[@text="Task name"]")
+2026-10-31T21:55:36.310Z INFO webdriver: [POST] http://127.0.0.1:4723/session/fc1fff10-af80-4640-afd9-88e12d336d04/element
+2026-10-31T21:55:36.310Z INFO webdriver: DATA {"using":"xpath","value":"//android.widget.EditText[@text=\"Task name\"]"}
+2026-10-31T21:55:36.870Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-0036-ffff-ffff00000030',
+  ELEMENT: '00000000-0000-0036-ffff-ffff00000030'
+}
+2026-10-31T21:55:36.873Z INFO webdriver: COMMAND isElementDisplayed("00000000-0000-0036-ffff-ffff00000030")
+2026-10-31T21:55:36.874Z INFO webdriver: [GET] http://127.0.0.1:4723/session/fc1fff10-af80-4640-afd9-88e12d336d04/element/00000000-0000-0036-ffff-ffff00000030/displayed
+2026-10-31T21:55:37.760Z INFO webdriver: RESULT true
+2026-10-31T21:55:37.761Z INFO webdriver: COMMAND elementClick("00000000-0000-0036-ffff-ffff00000030")
+2026-10-31T21:55:37.761Z INFO webdriver: [POST] http://127.0.0.1:4723/session/fc1fff10-af80-4640-afd9-88e12d336d04/element/00000000-0000-0036-ffff-ffff00000030/click
+2026-10-31T21:55:37.761Z INFO webdriver: DATA {}
+2026-10-31T21:55:38.308Z INFO webdriver: RESULT null
+2026-10-31T21:55:38.308Z INFO webdriver: COMMAND elementClear("00000000-0000-0036-ffff-ffff00000030")
+2026-10-31T21:55:38.308Z INFO webdriver: [POST] http://127.0.0.1:4723/session/fc1fff10-af80-4640-afd9-88e12d336d04/element/00000000-0000-0036-ffff-ffff00000030/clear
+2026-10-31T21:55:38.308Z INFO webdriver: DATA {}
+2026-10-31T21:55:38.329Z INFO webdriver: RESULT null
+2026-10-31T21:55:38.330Z INFO webdriver: COMMAND elementClear("00000000-0000-0036-ffff-ffff00000030")
+2026-10-31T21:55:38.330Z INFO webdriver: [POST] http://127.0.0.1:4723/session/fc1fff10-af80-4640-afd9-88e12d336d04/element/00000000-0000-0036-ffff-ffff00000030/clear
+2026-10-31T21:55:38.330Z INFO webdriver: DATA {}
+2026-10-31T21:55:38.955Z INFO webdriver: RESULT null
+2026-10-31T21:55:38.956Z INFO webdriver: COMMAND elementSendKeys("00000000-0000-0036-ffff-ffff00000030", "Comprar leite")
+2026-10-31T21:55:38.956Z INFO webdriver: [POST] http://127.0.0.1:4723/session/fc1fff10-af80-4640-afd9-88e12d336d04/element/00000000-0000-0036-ffff-ffff00000030/value
+2026-10-31T21:55:38.956Z INFO webdriver: DATA {"text":"Comprar leite"}
+2026-10-31T21:55:40.218Z INFO webdriver: RESULT null
+2026-10-31T21:55:40.219Z INFO webdriver: COMMAND findElement("accessibility id", "Save")
+2026-10-31T21:55:40.219Z INFO webdriver: [POST] http://127.0.0.1:4723/session/fc1fff10-af80-4640-afd9-88e12d336d04/element
+2026-10-31T21:55:40.219Z INFO webdriver: DATA {"using":"accessibility id","value":"Save"}
+2026-10-31T21:55:40.291Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-0036-0000-00b20000002d',
+  ELEMENT: '00000000-0000-0036-0000-00b20000002d'
+}
+2026-10-31T21:55:40.295Z INFO webdriver: COMMAND elementClick("00000000-0000-0036-0000-00b20000002d")
+2026-10-31T21:55:40.295Z INFO webdriver: [POST] http://127.0.0.1:4723/session/fc1fff10-af80-4640-afd9-88e12d336d04/element/00000000-0000-0036-0000-00b20000002d/click
+2026-10-31T21:55:40.295Z INFO webdriver: DATA {}
+2026-10-31T21:55:41.870Z INFO webdriver: RESULT null

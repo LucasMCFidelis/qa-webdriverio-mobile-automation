@@ -1,0 +1,38 @@
+.........Console Logs.........
+
+2026-10-31T21:57:16.789Z INFO webdriver: COMMAND deleteSession(<object>)
+2026-10-31T21:57:16.790Z INFO webdriver: [DELETE] http://127.0.0.1:4723/session/16102411-6d29-4d7b-a621-f6b26b841c9a
+2026-10-31T21:57:16.790Z INFO webdriver: DATA {"deleteSessionOpts":{"shutdownDriver":false}}
+2026-10-31T21:57:17.050Z INFO webdriver: RESULT null
+2026-10-31T21:57:17.051Z INFO webdriver: [POST] http://127.0.0.1:4723/session
+2026-10-31T21:57:19.624Z INFO webdriver: COMMAND findElement("xpath", "//*[@text="Continue without sync"]")
+2026-10-31T21:57:19.624Z INFO webdriver: [POST] http://127.0.0.1:4723/session/c4ba908f-5bbe-4a94-9ce6-63af4c992d8e/element
+2026-10-31T21:57:19.624Z INFO webdriver: DATA {"using":"xpath","value":"//*[@text=\"Continue without sync\"]"}
+2026-10-31T21:57:19.969Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-0064-0000-001f00000006',
+  ELEMENT: '00000000-0000-0064-0000-001f00000006'
+}
+2026-10-31T21:57:19.972Z INFO webdriver: COMMAND isElementDisplayed("00000000-0000-0064-0000-001f00000006")
+2026-10-31T21:57:19.972Z INFO webdriver: [GET] http://127.0.0.1:4723/session/c4ba908f-5bbe-4a94-9ce6-63af4c992d8e/element/00000000-0000-0064-0000-001f00000006/displayed
+2026-10-31T21:57:20.482Z INFO webdriver: RESULT true
+2026-10-31T21:57:20.483Z INFO webdriver: COMMAND findElement("xpath", "//*[@text="Continue without sync"]")
+2026-10-31T21:57:20.483Z INFO webdriver: [POST] http://127.0.0.1:4723/session/c4ba908f-5bbe-4a94-9ce6-63af4c992d8e/element
+2026-10-31T21:57:20.483Z INFO webdriver: DATA {"using":"xpath","value":"//*[@text=\"Continue without sync\"]"}
+2026-10-31T21:57:20.516Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-0064-0000-001f00000006',
+  ELEMENT: '00000000-0000-0064-0000-001f00000006'
+}
+2026-10-31T21:57:20.518Z INFO webdriver: COMMAND elementClick("00000000-0000-0064-0000-001f00000006")
+2026-10-31T21:57:20.519Z INFO webdriver: [POST] http://127.0.0.1:4723/session/c4ba908f-5bbe-4a94-9ce6-63af4c992d8e/element/00000000-0000-0064-0000-001f00000006/click
+2026-10-31T21:57:20.519Z INFO webdriver: DATA {}
+2026-10-31T21:57:21.232Z INFO webdriver: RESULT null
+2026-10-31T21:57:21.232Z INFO webdriver: COMMAND findElement("xpath", "//*[@text="My Tasks"]")
+2026-10-31T21:57:21.232Z INFO webdriver: [POST] http://127.0.0.1:4723/session/c4ba908f-5bbe-4a94-9ce6-63af4c992d8e/element
+2026-10-31T21:57:21.233Z INFO webdriver: DATA {"using":"xpath","value":"//*[@text=\"My Tasks\"]"}
+2026-10-31T21:57:21.264Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-0064-ffff-ffff00000011',
+  ELEMENT: '00000000-0000-0064-ffff-ffff00000011'
+}
+2026-10-31T21:57:21.265Z INFO webdriver: COMMAND isElementDisplayed("00000000-0000-0064-ffff-ffff00000011")
+2026-10-31T21:57:21.266Z INFO webdriver: [GET] http://127.0.0.1:4723/session/c4ba908f-5bbe-4a94-9ce6-63af4c992d8e/element/00000000-0000-0064-ffff-ffff00000011/displayed
+2026-10-31T21:57:21.275Z INFO webdriver: RESULT true

@@ -1,0 +1,12 @@
+.........Console Logs.........
+
+2026-10-31T21:56:28.935Z INFO webdriver: COMMAND findElement("xpath", "//android.widget.EditText[@text="Tarefa a ser excluída"]")
+2026-10-31T21:56:28.935Z INFO webdriver: [POST] http://127.0.0.1:4723/session/1037752e-4850-425c-a96b-2371dda764c6/element
+2026-10-31T21:56:28.935Z INFO webdriver: DATA {"using":"xpath","value":"//android.widget.EditText[@text=\"Tarefa a ser excluída\"]"}
+2026-10-31T21:56:29.520Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-0041-ffff-ffff0000006d',
+  ELEMENT: '00000000-0000-0041-ffff-ffff0000006d'
+}
+2026-10-31T21:56:29.522Z INFO webdriver: COMMAND isElementDisplayed("00000000-0000-0041-ffff-ffff0000006d")
+2026-10-31T21:56:29.522Z INFO webdriver: [GET] http://127.0.0.1:4723/session/1037752e-4850-425c-a96b-2371dda764c6/element/00000000-0000-0041-ffff-ffff0000006d/displayed
+2026-10-31T21:56:29.532Z INFO webdriver: RESULT true

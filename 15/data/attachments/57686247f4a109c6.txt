@@ -1,0 +1,12 @@
+.........Console Logs.........
+
+2026-10-31T21:54:11.954Z INFO webdriver: COMMAND findElement("xpath", "//*[@text="Continue without sync"]")
+2026-10-31T21:54:11.955Z INFO webdriver: [POST] http://127.0.0.1:4723/session/3f684034-b3a8-4276-9613-5930c88c96fe/element
+2026-10-31T21:54:11.955Z INFO webdriver: DATA {"using":"xpath","value":"//*[@text=\"Continue without sync\"]"}
+2026-10-31T21:54:13.133Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-0009-0000-001f00000006',
+  ELEMENT: '00000000-0000-0009-0000-001f00000006'
+}
+2026-10-31T21:54:13.141Z INFO webdriver: COMMAND isElementDisplayed("00000000-0000-0009-0000-001f00000006")
+2026-10-31T21:54:13.141Z INFO webdriver: [GET] http://127.0.0.1:4723/session/3f684034-b3a8-4276-9613-5930c88c96fe/element/00000000-0000-0009-0000-001f00000006/displayed
+2026-10-31T21:54:13.611Z INFO webdriver: RESULT true

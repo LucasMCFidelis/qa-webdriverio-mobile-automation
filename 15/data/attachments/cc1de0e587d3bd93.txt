@@ -1,0 +1,97 @@
+.........Console Logs.........
+
+2026-10-31T21:56:52.288Z INFO webdriver: COMMAND findElement("accessibility id", "Create new task")
+2026-10-31T21:56:52.288Z INFO webdriver: [POST] http://127.0.0.1:4723/session/e79cfa92-343c-4896-b44f-98070b1c0339/element
+2026-10-31T21:56:52.289Z INFO webdriver: DATA {"using":"accessibility id","value":"Create new task"}
+2026-10-31T21:56:52.304Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-004e-ffff-ffff00000027',
+  ELEMENT: '00000000-0000-004e-ffff-ffff00000027'
+}
+2026-10-31T21:56:52.305Z INFO webdriver: COMMAND isElementDisplayed("00000000-0000-004e-ffff-ffff00000027")
+2026-10-31T21:56:52.306Z INFO webdriver: [GET] http://127.0.0.1:4723/session/e79cfa92-343c-4896-b44f-98070b1c0339/element/00000000-0000-004e-ffff-ffff00000027/displayed
+2026-10-31T21:56:52.313Z INFO webdriver: RESULT true
+2026-10-31T21:56:52.314Z INFO webdriver: COMMAND findElement("accessibility id", "Create new task")
+2026-10-31T21:56:52.314Z INFO webdriver: [POST] http://127.0.0.1:4723/session/e79cfa92-343c-4896-b44f-98070b1c0339/element
+2026-10-31T21:56:52.314Z INFO webdriver: DATA {"using":"accessibility id","value":"Create new task"}
+2026-10-31T21:56:52.328Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-004e-ffff-ffff00000027',
+  ELEMENT: '00000000-0000-004e-ffff-ffff00000027'
+}
+2026-10-31T21:56:52.329Z INFO webdriver: COMMAND elementClick("00000000-0000-004e-ffff-ffff00000027")
+2026-10-31T21:56:52.329Z INFO webdriver: [POST] http://127.0.0.1:4723/session/e79cfa92-343c-4896-b44f-98070b1c0339/element/00000000-0000-004e-ffff-ffff00000027/click
+2026-10-31T21:56:52.329Z INFO webdriver: DATA {}
+2026-10-31T21:56:52.381Z INFO webdriver: RESULT null
+2026-10-31T21:56:52.381Z INFO webdriver: COMMAND findElement("xpath", "//android.widget.EditText[@text="Task name"]")
+2026-10-31T21:56:52.381Z INFO webdriver: [POST] http://127.0.0.1:4723/session/e79cfa92-343c-4896-b44f-98070b1c0339/element
+2026-10-31T21:56:52.381Z INFO webdriver: DATA {"using":"xpath","value":"//android.widget.EditText[@text=\"Task name\"]"}
+2026-10-31T21:56:52.822Z INFO webdriver: RESULT {
+  error: 'no such element',
+  message: 'An element could not be located on the page using the given search parameters.',
+  stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+    '    at AndroidUiautomator2Driver.findElOrEls (file:///home/runner/work/qa-webdriverio-mobile-automation/qa-webdriverio-mobile-automation/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/build/lib/commands/find.js:54:15)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n' +
+    '    at async AndroidUiautomator2Driver.findElOrElsWithProcessing (/home/runner/work/qa-webdriverio-mobile-automation/qa-webdriverio-mobile-automation/node_modules/@appium/base-driver/build/lib/basedriver/commands/find.js:12:16)\n' +
+    '    at async AndroidUiautomator2Driver.findElement (/home/runner/work/qa-webdriverio-mobile-automation/qa-webdriverio-mobile-automation/node_modules/@appium/base-driver/build/lib/basedriver/commands/find.js:28:16)\n' +
+    '    at async runCommandPromise (/home/runner/work/qa-webdriverio-mobile-automation/qa-webdriverio-mobile-automation/node_modules/@appium/base-driver/build/lib/basedriver/driver.js:119:24)'
+}
+2026-10-31T21:56:52.824Z INFO webdriver: COMMAND findElement("xpath", "//android.widget.EditText[@text="Task name"]")
+2026-10-31T21:56:52.825Z INFO webdriver: [POST] http://127.0.0.1:4723/session/e79cfa92-343c-4896-b44f-98070b1c0339/element
+2026-10-31T21:56:52.825Z INFO webdriver: DATA {"using":"xpath","value":"//android.widget.EditText[@text=\"Task name\"]"}
+2026-10-31T21:56:54.014Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-004e-ffff-ffff00000048',
+  ELEMENT: '00000000-0000-004e-ffff-ffff00000048'
+}
+2026-10-31T21:56:54.016Z INFO webdriver: COMMAND isElementDisplayed("00000000-0000-004e-ffff-ffff00000048")
+2026-10-31T21:56:54.016Z INFO webdriver: [GET] http://127.0.0.1:4723/session/e79cfa92-343c-4896-b44f-98070b1c0339/element/00000000-0000-004e-ffff-ffff00000048/displayed
+2026-10-31T21:56:54.601Z INFO webdriver: RESULT true
+2026-10-31T21:56:54.601Z INFO webdriver: COMMAND elementClick("00000000-0000-004e-ffff-ffff00000048")
+2026-10-31T21:56:54.601Z INFO webdriver: [POST] http://127.0.0.1:4723/session/e79cfa92-343c-4896-b44f-98070b1c0339/element/00000000-0000-004e-ffff-ffff00000048/click
+2026-10-31T21:56:54.601Z INFO webdriver: DATA {}
+2026-10-31T21:56:55.157Z INFO webdriver: RESULT null
+2026-10-31T21:56:55.157Z INFO webdriver: COMMAND elementClear("00000000-0000-004e-ffff-ffff00000048")
+2026-10-31T21:56:55.157Z INFO webdriver: [POST] http://127.0.0.1:4723/session/e79cfa92-343c-4896-b44f-98070b1c0339/element/00000000-0000-004e-ffff-ffff00000048/clear
+2026-10-31T21:56:55.157Z INFO webdriver: DATA {}
+2026-10-31T21:56:55.169Z INFO webdriver: RESULT null
+2026-10-31T21:56:55.170Z INFO webdriver: COMMAND elementClear("00000000-0000-004e-ffff-ffff00000048")
+2026-10-31T21:56:55.170Z INFO webdriver: [POST] http://127.0.0.1:4723/session/e79cfa92-343c-4896-b44f-98070b1c0339/element/00000000-0000-004e-ffff-ffff00000048/clear
+2026-10-31T21:56:55.170Z INFO webdriver: DATA {}
+2026-10-31T21:56:55.809Z INFO webdriver: RESULT null
+2026-10-31T21:56:55.810Z INFO webdriver: COMMAND elementSendKeys("00000000-0000-004e-ffff-ffff00000048", "Tarefa concluída persistente")
+2026-10-31T21:56:55.810Z INFO webdriver: [POST] http://127.0.0.1:4723/session/e79cfa92-343c-4896-b44f-98070b1c0339/element/00000000-0000-004e-ffff-ffff00000048/value
+2026-10-31T21:56:55.810Z INFO webdriver: DATA {"text":"Tarefa concluída persistente"}
+2026-10-31T21:56:57.050Z INFO webdriver: RESULT null
+2026-10-31T21:56:57.050Z INFO webdriver: COMMAND findElement("accessibility id", "Save")
+2026-10-31T21:56:57.050Z INFO webdriver: [POST] http://127.0.0.1:4723/session/e79cfa92-343c-4896-b44f-98070b1c0339/element
+2026-10-31T21:56:57.050Z INFO webdriver: DATA {"using":"accessibility id","value":"Save"}
+2026-10-31T21:56:57.104Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-004e-0000-00a700000045',
+  ELEMENT: '00000000-0000-004e-0000-00a700000045'
+}
+2026-10-31T21:56:57.105Z INFO webdriver: COMMAND elementClick("00000000-0000-004e-0000-00a700000045")
+2026-10-31T21:56:57.105Z INFO webdriver: [POST] http://127.0.0.1:4723/session/e79cfa92-343c-4896-b44f-98070b1c0339/element/00000000-0000-004e-0000-00a700000045/click
+2026-10-31T21:56:57.106Z INFO webdriver: DATA {}
+2026-10-31T21:56:58.687Z INFO webdriver: RESULT null
+2026-10-31T21:56:58.687Z INFO webdriver: COMMAND findElement("xpath", "//*[@resource-id="org.tasks:id/title" and @text="Tarefa concluída persistente"]/..")
+2026-10-31T21:56:58.687Z INFO webdriver: [POST] http://127.0.0.1:4723/session/e79cfa92-343c-4896-b44f-98070b1c0339/element
+2026-10-31T21:56:58.687Z INFO webdriver: DATA {"using":"xpath","value":"//*[@resource-id=\"org.tasks:id/title\" and @text=\"Tarefa concluída persistente\"]/.."}
+2026-10-31T21:56:58.715Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-004e-ffff-ffff0000006f',
+  ELEMENT: '00000000-0000-004e-ffff-ffff0000006f'
+}
+2026-10-31T21:56:58.717Z INFO webdriver: COMMAND findElementFromElement("00000000-0000-004e-ffff-ffff0000006f", "xpath", "//*[@resource-id="org.tasks:id/completeBox"]")
+2026-10-31T21:56:58.717Z INFO webdriver: [POST] http://127.0.0.1:4723/session/e79cfa92-343c-4896-b44f-98070b1c0339/element/00000000-0000-004e-ffff-ffff0000006f/element
+2026-10-31T21:56:58.717Z INFO webdriver: DATA {"using":"xpath","value":"//*[@resource-id=\"org.tasks:id/completeBox\"]"}
+2026-10-31T21:56:58.739Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-004e-ffff-ffff00000070',
+  ELEMENT: '00000000-0000-004e-ffff-ffff00000070'
+}
+2026-10-31T21:56:58.741Z INFO webdriver: COMMAND isElementDisplayed("00000000-0000-004e-ffff-ffff00000070")
+2026-10-31T21:56:58.741Z INFO webdriver: [GET] http://127.0.0.1:4723/session/e79cfa92-343c-4896-b44f-98070b1c0339/element/00000000-0000-004e-ffff-ffff00000070/displayed
+2026-10-31T21:56:58.748Z INFO webdriver: RESULT true
+2026-10-31T21:56:58.748Z INFO webdriver: COMMAND isElementSelected("00000000-0000-004e-ffff-ffff00000070")
+2026-10-31T21:56:58.748Z INFO webdriver: [GET] http://127.0.0.1:4723/session/e79cfa92-343c-4896-b44f-98070b1c0339/element/00000000-0000-004e-ffff-ffff00000070/selected
+2026-10-31T21:56:58.756Z INFO webdriver: RESULT false
+2026-10-31T21:56:58.757Z INFO webdriver: COMMAND elementClick("00000000-0000-004e-ffff-ffff00000070")
+2026-10-31T21:56:58.757Z INFO webdriver: [POST] http://127.0.0.1:4723/session/e79cfa92-343c-4896-b44f-98070b1c0339/element/00000000-0000-004e-ffff-ffff00000070/click
+2026-10-31T21:56:58.757Z INFO webdriver: DATA {}
+2026-10-31T21:56:59.754Z INFO webdriver: RESULT null

@@ -1,0 +1,69 @@
+.........Console Logs.........
+
+2026-10-31T21:55:15.136Z INFO webdriver: COMMAND findElement("xpath", "//*[@resource-id="org.tasks:id/title" and @text="Revisar relatório"]/..")
+2026-10-31T21:55:15.139Z INFO webdriver: [POST] http://127.0.0.1:4723/session/93949f5a-7ded-46cb-a702-07540e92ecac/element
+2026-10-31T21:55:15.139Z INFO webdriver: DATA {"using":"xpath","value":"//*[@resource-id=\"org.tasks:id/title\" and @text=\"Revisar relatório\"]/.."}
+2026-10-31T21:55:16.336Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-002c-ffff-ffff0000005f',
+  ELEMENT: '00000000-0000-002c-ffff-ffff0000005f'
+}
+2026-10-31T21:55:16.340Z INFO webdriver: COMMAND findElementFromElement("00000000-0000-002c-ffff-ffff0000005f", "xpath", "//*[@resource-id="org.tasks:id/completeBox"]")
+2026-10-31T21:55:16.340Z INFO webdriver: [POST] http://127.0.0.1:4723/session/93949f5a-7ded-46cb-a702-07540e92ecac/element/00000000-0000-002c-ffff-ffff0000005f/element
+2026-10-31T21:55:16.340Z INFO webdriver: DATA {"using":"xpath","value":"//*[@resource-id=\"org.tasks:id/completeBox\"]"}
+2026-10-31T21:55:16.881Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-002c-ffff-ffff00000060',
+  ELEMENT: '00000000-0000-002c-ffff-ffff00000060'
+}
+2026-10-31T21:55:16.883Z INFO webdriver: COMMAND isElementDisplayed("00000000-0000-002c-ffff-ffff00000060")
+2026-10-31T21:55:16.884Z INFO webdriver: [GET] http://127.0.0.1:4723/session/93949f5a-7ded-46cb-a702-07540e92ecac/element/00000000-0000-002c-ffff-ffff00000060/displayed
+2026-10-31T21:55:16.894Z INFO webdriver: RESULT true
+2026-10-31T21:55:16.894Z INFO webdriver: COMMAND elementClick("00000000-0000-002c-ffff-ffff00000060")
+2026-10-31T21:55:16.894Z INFO webdriver: [POST] http://127.0.0.1:4723/session/93949f5a-7ded-46cb-a702-07540e92ecac/element/00000000-0000-002c-ffff-ffff00000060/click
+2026-10-31T21:55:16.894Z INFO webdriver: DATA {}
+2026-10-31T21:55:18.091Z INFO webdriver: RESULT null
+2026-10-31T21:55:18.091Z INFO webdriver: COMMAND findElement("xpath", "//*[@resource-id="org.tasks:id/header" and @text="Completed"]/..")
+2026-10-31T21:55:18.092Z INFO webdriver: [POST] http://127.0.0.1:4723/session/93949f5a-7ded-46cb-a702-07540e92ecac/element
+2026-10-31T21:55:18.092Z INFO webdriver: DATA {"using":"xpath","value":"//*[@resource-id=\"org.tasks:id/header\" and @text=\"Completed\"]/.."}
+2026-10-31T21:55:18.129Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-002c-ffff-ffff00000069',
+  ELEMENT: '00000000-0000-002c-ffff-ffff00000069'
+}
+2026-10-31T21:55:18.136Z INFO webdriver: COMMAND isElementDisplayed("00000000-0000-002c-ffff-ffff00000069")
+2026-10-31T21:55:18.136Z INFO webdriver: [GET] http://127.0.0.1:4723/session/93949f5a-7ded-46cb-a702-07540e92ecac/element/00000000-0000-002c-ffff-ffff00000069/displayed
+2026-10-31T21:55:18.148Z INFO webdriver: RESULT true
+2026-10-31T21:55:18.149Z INFO webdriver: COMMAND isElementDisplayed("00000000-0000-002c-ffff-ffff00000069")
+2026-10-31T21:55:18.149Z INFO webdriver: [GET] http://127.0.0.1:4723/session/93949f5a-7ded-46cb-a702-07540e92ecac/element/00000000-0000-002c-ffff-ffff00000069/displayed
+2026-10-31T21:55:18.160Z INFO webdriver: RESULT true
+2026-10-31T21:55:18.161Z INFO webdriver: COMMAND findElement("xpath", "//*[@resource-id="org.tasks:id/title" and @text="Revisar relatório"]/..")
+2026-10-31T21:55:18.161Z INFO webdriver: [POST] http://127.0.0.1:4723/session/93949f5a-7ded-46cb-a702-07540e92ecac/element
+2026-10-31T21:55:18.161Z INFO webdriver: DATA {"using":"xpath","value":"//*[@resource-id=\"org.tasks:id/title\" and @text=\"Revisar relatório\"]/.."}
+2026-10-31T21:55:18.194Z INFO webdriver: RESULT {
+  error: 'no such element',
+  message: 'An element could not be located on the page using the given search parameters.',
+  stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+    '    at AndroidUiautomator2Driver.findElOrEls (file:///home/runner/work/qa-webdriverio-mobile-automation/qa-webdriverio-mobile-automation/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/build/lib/commands/find.js:54:15)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n' +
+    '    at async AndroidUiautomator2Driver.findElOrElsWithProcessing (/home/runner/work/qa-webdriverio-mobile-automation/qa-webdriverio-mobile-automation/node_modules/@appium/base-driver/build/lib/basedriver/commands/find.js:12:16)\n' +
+    '    at async AndroidUiautomator2Driver.findElement (/home/runner/work/qa-webdriverio-mobile-automation/qa-webdriverio-mobile-automation/node_modules/@appium/base-driver/build/lib/basedriver/commands/find.js:28:16)\n' +
+    '    at async runCommandPromise (/home/runner/work/qa-webdriverio-mobile-automation/qa-webdriverio-mobile-automation/node_modules/@appium/base-driver/build/lib/basedriver/driver.js:119:24)'
+}
+2026-10-31T21:55:18.198Z INFO webdriver: COMMAND findElement("xpath", "//*[@resource-id="org.tasks:id/title" and @text="Revisar relatório"]/..")
+2026-10-31T21:55:18.198Z INFO webdriver: [POST] http://127.0.0.1:4723/session/93949f5a-7ded-46cb-a702-07540e92ecac/element
+2026-10-31T21:55:18.198Z INFO webdriver: DATA {"using":"xpath","value":"//*[@resource-id=\"org.tasks:id/title\" and @text=\"Revisar relatório\"]/.."}
+2026-10-31T21:55:18.231Z INFO webdriver: RESULT {
+  error: 'no such element',
+  message: 'An element could not be located on the page using the given search parameters.',
+  stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+    '    at AndroidUiautomator2Driver.findElOrEls (file:///home/runner/work/qa-webdriverio-mobile-automation/qa-webdriverio-mobile-automation/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/build/lib/commands/find.js:54:15)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n' +
+    '    at async AndroidUiautomator2Driver.findElOrElsWithProcessing (/home/runner/work/qa-webdriverio-mobile-automation/qa-webdriverio-mobile-automation/node_modules/@appium/base-driver/build/lib/basedriver/commands/find.js:12:16)\n' +
+    '    at async AndroidUiautomator2Driver.findElement (/home/runner/work/qa-webdriverio-mobile-automation/qa-webdriverio-mobile-automation/node_modules/@appium/base-driver/build/lib/basedriver/commands/find.js:28:16)\n' +
+    '    at async runCommandPromise (/home/runner/work/qa-webdriverio-mobile-automation/qa-webdriverio-mobile-automation/node_modules/@appium/base-driver/build/lib/basedriver/driver.js:119:24)'
+}
+2026-10-31T21:55:18.235Z INFO webdriver: COMMAND elementClick("00000000-0000-002c-ffff-ffff00000069")
+2026-10-31T21:55:18.235Z INFO webdriver: [POST] http://127.0.0.1:4723/session/93949f5a-7ded-46cb-a702-07540e92ecac/element/00000000-0000-002c-ffff-ffff00000069/click
+2026-10-31T21:55:18.235Z INFO webdriver: DATA {}
+2026-10-31T21:55:19.060Z INFO webdriver: RESULT null
+2026-10-31T21:55:19.061Z INFO webdriver: COMMAND isElementDisplayed("00000000-0000-002c-ffff-ffff00000060")
+2026-10-31T21:55:19.062Z INFO webdriver: [GET] http://127.0.0.1:4723/session/93949f5a-7ded-46cb-a702-07540e92ecac/element/00000000-0000-002c-ffff-ffff00000060/displayed
+2026-10-31T21:55:19.071Z INFO webdriver: RESULT true

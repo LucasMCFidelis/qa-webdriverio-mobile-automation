@@ -1,0 +1,26 @@
+.........Console Logs.........
+
+2026-10-31T21:57:38.040Z INFO webdriver: COMMAND findElement("xpath", "//*[@resource-id="org.tasks:id/title" and @text="Lavar o carro"]/..")
+2026-10-31T21:57:38.041Z INFO webdriver: [POST] http://127.0.0.1:4723/session/4d00d35f-8b11-468c-bf42-ae0fca8dde48/element
+2026-10-31T21:57:38.041Z INFO webdriver: DATA {"using":"xpath","value":"//*[@resource-id=\"org.tasks:id/title\" and @text=\"Lavar o carro\"]/.."}
+2026-10-31T21:57:38.091Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-006e-ffff-ffff0000005f',
+  ELEMENT: '00000000-0000-006e-ffff-ffff0000005f'
+}
+2026-10-31T21:57:38.093Z INFO webdriver: COMMAND isElementDisplayed("00000000-0000-006e-ffff-ffff0000005f")
+2026-10-31T21:57:38.093Z INFO webdriver: [GET] http://127.0.0.1:4723/session/4d00d35f-8b11-468c-bf42-ae0fca8dde48/element/00000000-0000-006e-ffff-ffff0000005f/displayed
+2026-10-31T21:57:38.664Z INFO webdriver: RESULT true
+2026-10-31T21:57:38.665Z INFO webdriver: COMMAND elementClick("00000000-0000-006e-ffff-ffff0000005f")
+2026-10-31T21:57:38.665Z INFO webdriver: [POST] http://127.0.0.1:4723/session/4d00d35f-8b11-468c-bf42-ae0fca8dde48/element/00000000-0000-006e-ffff-ffff0000005f/click
+2026-10-31T21:57:38.665Z INFO webdriver: DATA {}
+2026-10-31T21:57:39.435Z INFO webdriver: RESULT null
+2026-10-31T21:57:39.436Z INFO webdriver: COMMAND findElement("xpath", "//android.widget.EditText[@text="Lavar o carro"]")
+2026-10-31T21:57:39.436Z INFO webdriver: [POST] http://127.0.0.1:4723/session/4d00d35f-8b11-468c-bf42-ae0fca8dde48/element
+2026-10-31T21:57:39.436Z INFO webdriver: DATA {"using":"xpath","value":"//android.widget.EditText[@text=\"Lavar o carro\"]"}
+2026-10-31T21:57:39.502Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-006e-ffff-ffff0000006f',
+  ELEMENT: '00000000-0000-006e-ffff-ffff0000006f'
+}
+2026-10-31T21:57:39.505Z INFO webdriver: COMMAND isElementDisplayed("00000000-0000-006e-ffff-ffff0000006f")
+2026-10-31T21:57:39.506Z INFO webdriver: [GET] http://127.0.0.1:4723/session/4d00d35f-8b11-468c-bf42-ae0fca8dde48/element/00000000-0000-006e-ffff-ffff0000006f/displayed
+2026-10-31T21:57:40.069Z INFO webdriver: RESULT true

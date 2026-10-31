@@ -1,0 +1,54 @@
+.........Console Logs.........
+
+2026-10-31T21:57:54.634Z INFO webdriver: COMMAND hideKeyboard()
+2026-10-31T21:57:54.635Z INFO webdriver: [POST] http://127.0.0.1:4723/session/4d00d35f-8b11-468c-bf42-ae0fca8dde48/appium/device/hide_keyboard
+2026-10-31T21:57:54.635Z INFO webdriver: DATA {}
+2026-10-31T21:57:54.926Z INFO webdriver: RESULT true
+2026-10-31T21:57:54.926Z INFO webdriver: COMMAND back()
+2026-10-31T21:57:54.926Z INFO webdriver: [POST] http://127.0.0.1:4723/session/4d00d35f-8b11-468c-bf42-ae0fca8dde48/back
+2026-10-31T21:57:54.926Z INFO webdriver: DATA {}
+2026-10-31T21:57:55.581Z INFO webdriver: RESULT null
+2026-10-31T21:57:55.582Z INFO webdriver: COMMAND findElement("xpath", "//android.widget.Button[@text="Discard"]")
+2026-10-31T21:57:55.582Z INFO webdriver: [POST] http://127.0.0.1:4723/session/4d00d35f-8b11-468c-bf42-ae0fca8dde48/element
+2026-10-31T21:57:55.582Z INFO webdriver: DATA {"using":"xpath","value":"//android.widget.Button[@text=\"Discard\"]"}
+2026-10-31T21:57:56.186Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-0071-ffff-ffff00000116',
+  ELEMENT: '00000000-0000-0071-ffff-ffff00000116'
+}
+2026-10-31T21:57:56.188Z INFO webdriver: COMMAND isElementDisplayed("00000000-0000-0071-ffff-ffff00000116")
+2026-10-31T21:57:56.189Z INFO webdriver: [GET] http://127.0.0.1:4723/session/4d00d35f-8b11-468c-bf42-ae0fca8dde48/element/00000000-0000-0071-ffff-ffff00000116/displayed
+2026-10-31T21:57:56.199Z INFO webdriver: RESULT true
+2026-10-31T21:57:56.199Z INFO webdriver: COMMAND findElement("xpath", "//android.widget.Button[@text="Discard"]")
+2026-10-31T21:57:56.200Z INFO webdriver: [POST] http://127.0.0.1:4723/session/4d00d35f-8b11-468c-bf42-ae0fca8dde48/element
+2026-10-31T21:57:56.200Z INFO webdriver: DATA {"using":"xpath","value":"//android.widget.Button[@text=\"Discard\"]"}
+2026-10-31T21:57:56.213Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-0071-ffff-ffff00000116',
+  ELEMENT: '00000000-0000-0071-ffff-ffff00000116'
+}
+2026-10-31T21:57:56.215Z INFO webdriver: COMMAND elementClick("00000000-0000-0071-ffff-ffff00000116")
+2026-10-31T21:57:56.215Z INFO webdriver: [POST] http://127.0.0.1:4723/session/4d00d35f-8b11-468c-bf42-ae0fca8dde48/element/00000000-0000-0071-ffff-ffff00000116/click
+2026-10-31T21:57:56.215Z INFO webdriver: DATA {}
+2026-10-31T21:57:56.264Z INFO webdriver: RESULT null
+2026-10-31T21:57:56.264Z INFO webdriver: COMMAND findElement("xpath", "//*[@text="My Tasks"]")
+2026-10-31T21:57:56.264Z INFO webdriver: [POST] http://127.0.0.1:4723/session/4d00d35f-8b11-468c-bf42-ae0fca8dde48/element
+2026-10-31T21:57:56.264Z INFO webdriver: DATA {"using":"xpath","value":"//*[@text=\"My Tasks\"]"}
+2026-10-31T21:57:56.311Z INFO webdriver: RESULT {
+  error: 'no such element',
+  message: 'An element could not be located on the page using the given search parameters.',
+  stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+    '    at AndroidUiautomator2Driver.findElOrEls (file:///home/runner/work/qa-webdriverio-mobile-automation/qa-webdriverio-mobile-automation/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/build/lib/commands/find.js:54:15)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n' +
+    '    at async AndroidUiautomator2Driver.findElOrElsWithProcessing (/home/runner/work/qa-webdriverio-mobile-automation/qa-webdriverio-mobile-automation/node_modules/@appium/base-driver/build/lib/basedriver/commands/find.js:12:16)\n' +
+    '    at async AndroidUiautomator2Driver.findElement (/home/runner/work/qa-webdriverio-mobile-automation/qa-webdriverio-mobile-automation/node_modules/@appium/base-driver/build/lib/basedriver/commands/find.js:28:16)\n' +
+    '    at async runCommandPromise (/home/runner/work/qa-webdriverio-mobile-automation/qa-webdriverio-mobile-automation/node_modules/@appium/base-driver/build/lib/basedriver/driver.js:119:24)'
+}
+2026-10-31T21:57:56.313Z INFO webdriver: COMMAND findElement("xpath", "//*[@text="My Tasks"]")
+2026-10-31T21:57:56.313Z INFO webdriver: [POST] http://127.0.0.1:4723/session/4d00d35f-8b11-468c-bf42-ae0fca8dde48/element
+2026-10-31T21:57:56.313Z INFO webdriver: DATA {"using":"xpath","value":"//*[@text=\"My Tasks\"]"}
+2026-10-31T21:57:56.947Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-006e-ffff-ffff00000011',
+  ELEMENT: '00000000-0000-006e-ffff-ffff00000011'
+}
+2026-10-31T21:57:56.948Z INFO webdriver: COMMAND isElementDisplayed("00000000-0000-006e-ffff-ffff00000011")
+2026-10-31T21:57:56.948Z INFO webdriver: [GET] http://127.0.0.1:4723/session/4d00d35f-8b11-468c-bf42-ae0fca8dde48/element/00000000-0000-006e-ffff-ffff00000011/displayed
+2026-10-31T21:57:56.956Z INFO webdriver: RESULT true

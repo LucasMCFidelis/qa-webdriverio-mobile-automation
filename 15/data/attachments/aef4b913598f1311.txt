@@ -1,0 +1,6 @@
+.........Console Logs.........
+
+2026-10-31T21:56:50.356Z INFO webdriver: COMMAND terminateApp("org.tasks")
+2026-10-31T21:56:50.356Z INFO webdriver: [POST] http://127.0.0.1:4723/session/e79cfa92-343c-4896-b44f-98070b1c0339/appium/device/terminate_app
+2026-10-31T21:56:50.356Z INFO webdriver: DATA {"appId":"org.tasks"}
+2026-10-31T21:56:50.548Z INFO webdriver: RESULT true

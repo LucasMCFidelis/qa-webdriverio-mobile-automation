@@ -1,0 +1,16 @@
+.........Console Logs.........
+
+2026-10-31T21:56:28.167Z INFO webdriver: COMMAND findElement("accessibility id", "Delete task")
+2026-10-31T21:56:28.167Z INFO webdriver: [POST] http://127.0.0.1:4723/session/1037752e-4850-425c-a96b-2371dda764c6/element
+2026-10-31T21:56:28.167Z INFO webdriver: DATA {"using":"accessibility id","value":"Delete task"}
+2026-10-31T21:56:28.196Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-0041-0000-015d0000006a',
+  ELEMENT: '00000000-0000-0041-0000-015d0000006a'
+}
+2026-10-31T21:56:28.197Z INFO webdriver: COMMAND isElementDisplayed("00000000-0000-0041-0000-015d0000006a")
+2026-10-31T21:56:28.197Z INFO webdriver: [GET] http://127.0.0.1:4723/session/1037752e-4850-425c-a96b-2371dda764c6/element/00000000-0000-0041-0000-015d0000006a/displayed
+2026-10-31T21:56:28.207Z INFO webdriver: RESULT true
+2026-10-31T21:56:28.207Z INFO webdriver: COMMAND elementClick("00000000-0000-0041-0000-015d0000006a")
+2026-10-31T21:56:28.207Z INFO webdriver: [POST] http://127.0.0.1:4723/session/1037752e-4850-425c-a96b-2371dda764c6/element/00000000-0000-0041-0000-015d0000006a/click
+2026-10-31T21:56:28.207Z INFO webdriver: DATA {}
+2026-10-31T21:56:28.856Z INFO webdriver: RESULT null

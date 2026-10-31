@@ -1,0 +1,69 @@
+.........Console Logs.........
+
+2026-10-31T21:55:48.737Z INFO webdriver: COMMAND findElement("xpath", "//*[@resource-id="org.tasks:id/header" and @text="No due date"]/..")
+2026-10-31T21:55:48.737Z INFO webdriver: [POST] http://127.0.0.1:4723/session/fc1fff10-af80-4640-afd9-88e12d336d04/element
+2026-10-31T21:55:48.737Z INFO webdriver: DATA {"using":"xpath","value":"//*[@resource-id=\"org.tasks:id/header\" and @text=\"No due date\"]/.."}
+2026-10-31T21:55:48.765Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-0036-ffff-ffff0000005b',
+  ELEMENT: '00000000-0000-0036-ffff-ffff0000005b'
+}
+2026-10-31T21:55:48.767Z INFO webdriver: COMMAND isElementDisplayed("00000000-0000-0036-ffff-ffff0000005b")
+2026-10-31T21:55:48.767Z INFO webdriver: [GET] http://127.0.0.1:4723/session/fc1fff10-af80-4640-afd9-88e12d336d04/element/00000000-0000-0036-ffff-ffff0000005b/displayed
+2026-10-31T21:55:48.775Z INFO webdriver: RESULT true
+2026-10-31T21:55:48.775Z INFO webdriver: COMMAND isElementDisplayed("00000000-0000-0036-ffff-ffff0000005b")
+2026-10-31T21:55:48.775Z INFO webdriver: [GET] http://127.0.0.1:4723/session/fc1fff10-af80-4640-afd9-88e12d336d04/element/00000000-0000-0036-ffff-ffff0000005b/displayed
+2026-10-31T21:55:48.785Z INFO webdriver: RESULT true
+2026-10-31T21:55:48.786Z INFO webdriver: COMMAND findElement("xpath", "//*[@resource-id="org.tasks:id/title" and @text="Agendar consulta médica"]/..")
+2026-10-31T21:55:48.786Z INFO webdriver: [POST] http://127.0.0.1:4723/session/fc1fff10-af80-4640-afd9-88e12d336d04/element
+2026-10-31T21:55:48.786Z INFO webdriver: DATA {"using":"xpath","value":"//*[@resource-id=\"org.tasks:id/title\" and @text=\"Agendar consulta médica\"]/.."}
+2026-10-31T21:55:48.827Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-0036-ffff-ffff00000096',
+  ELEMENT: '00000000-0000-0036-ffff-ffff00000096'
+}
+2026-10-31T21:55:48.829Z INFO webdriver: COMMAND isElementDisplayed("00000000-0000-0036-ffff-ffff00000096")
+2026-10-31T21:55:48.829Z INFO webdriver: [GET] http://127.0.0.1:4723/session/fc1fff10-af80-4640-afd9-88e12d336d04/element/00000000-0000-0036-ffff-ffff00000096/displayed
+2026-10-31T21:55:48.839Z INFO webdriver: RESULT true
+2026-10-31T21:55:48.839Z INFO webdriver: COMMAND findElement("xpath", "//*[@text="My Tasks"]")
+2026-10-31T21:55:48.839Z INFO webdriver: [POST] http://127.0.0.1:4723/session/fc1fff10-af80-4640-afd9-88e12d336d04/element
+2026-10-31T21:55:48.840Z INFO webdriver: DATA {"using":"xpath","value":"//*[@text=\"My Tasks\"]"}
+2026-10-31T21:55:48.873Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-0036-ffff-ffff00000011',
+  ELEMENT: '00000000-0000-0036-ffff-ffff00000011'
+}
+2026-10-31T21:55:48.874Z INFO webdriver: COMMAND isElementDisplayed("00000000-0000-0036-ffff-ffff00000011")
+2026-10-31T21:55:48.875Z INFO webdriver: [GET] http://127.0.0.1:4723/session/fc1fff10-af80-4640-afd9-88e12d336d04/element/00000000-0000-0036-ffff-ffff00000011/displayed
+2026-10-31T21:55:48.884Z INFO webdriver: RESULT true
+2026-10-31T21:55:48.884Z INFO webdriver: COMMAND findElement("xpath", "//*[@resource-id="org.tasks:id/title" and @text="Agendar consulta médica"]/..")
+2026-10-31T21:55:48.884Z INFO webdriver: [POST] http://127.0.0.1:4723/session/fc1fff10-af80-4640-afd9-88e12d336d04/element
+2026-10-31T21:55:48.884Z INFO webdriver: DATA {"using":"xpath","value":"//*[@resource-id=\"org.tasks:id/title\" and @text=\"Agendar consulta médica\"]/.."}
+2026-10-31T21:55:48.911Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-0036-ffff-ffff00000096',
+  ELEMENT: '00000000-0000-0036-ffff-ffff00000096'
+}
+2026-10-31T21:55:48.914Z INFO webdriver: COMMAND findElementFromElement("00000000-0000-0036-ffff-ffff00000096", "xpath", "//*[@resource-id="org.tasks:id/title"]")
+2026-10-31T21:55:48.914Z INFO webdriver: [POST] http://127.0.0.1:4723/session/fc1fff10-af80-4640-afd9-88e12d336d04/element/00000000-0000-0036-ffff-ffff00000096/element
+2026-10-31T21:55:48.914Z INFO webdriver: DATA {"using":"xpath","value":"//*[@resource-id=\"org.tasks:id/title\"]"}
+2026-10-31T21:55:48.930Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-0036-ffff-ffff00000099',
+  ELEMENT: '00000000-0000-0036-ffff-ffff00000099'
+}
+2026-10-31T21:55:48.931Z INFO webdriver: COMMAND isElementDisplayed("00000000-0000-0036-ffff-ffff00000099")
+2026-10-31T21:55:48.931Z INFO webdriver: [GET] http://127.0.0.1:4723/session/fc1fff10-af80-4640-afd9-88e12d336d04/element/00000000-0000-0036-ffff-ffff00000099/displayed
+2026-10-31T21:55:48.940Z INFO webdriver: RESULT true
+2026-10-31T21:55:48.941Z INFO webdriver: COMMAND findElement("xpath", "//*[@resource-id="org.tasks:id/title" and @text="Agendar consulta médica"]/..")
+2026-10-31T21:55:48.941Z INFO webdriver: [POST] http://127.0.0.1:4723/session/fc1fff10-af80-4640-afd9-88e12d336d04/element
+2026-10-31T21:55:48.941Z INFO webdriver: DATA {"using":"xpath","value":"//*[@resource-id=\"org.tasks:id/title\" and @text=\"Agendar consulta médica\"]/.."}
+2026-10-31T21:55:48.967Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-0036-ffff-ffff00000096',
+  ELEMENT: '00000000-0000-0036-ffff-ffff00000096'
+}
+2026-10-31T21:55:48.969Z INFO webdriver: COMMAND findElementFromElement("00000000-0000-0036-ffff-ffff00000096", "xpath", "//*[@resource-id="org.tasks:id/completeBox"]")
+2026-10-31T21:55:48.969Z INFO webdriver: [POST] http://127.0.0.1:4723/session/fc1fff10-af80-4640-afd9-88e12d336d04/element/00000000-0000-0036-ffff-ffff00000096/element
+2026-10-31T21:55:48.969Z INFO webdriver: DATA {"using":"xpath","value":"//*[@resource-id=\"org.tasks:id/completeBox\"]"}
+2026-10-31T21:55:48.986Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-0036-ffff-ffff00000097',
+  ELEMENT: '00000000-0000-0036-ffff-ffff00000097'
+}
+2026-10-31T21:55:48.987Z INFO webdriver: COMMAND isElementDisplayed("00000000-0000-0036-ffff-ffff00000097")
+2026-10-31T21:55:48.988Z INFO webdriver: [GET] http://127.0.0.1:4723/session/fc1fff10-af80-4640-afd9-88e12d336d04/element/00000000-0000-0036-ffff-ffff00000097/displayed
+2026-10-31T21:55:48.996Z INFO webdriver: RESULT true
